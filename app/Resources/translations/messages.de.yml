@@ -1,0 +1,15 @@
+site:
+  title: 'Eisel & Karrmann Rechtsanwälte'
+nav:
+  home: 'Startseite'
+  imprint: 'Impressum'
+  contact: 'Kontakt'
+  ourFirm: 'Unsere Kanzlei'
+  projects: 'Projekte'
+headers:
+  aboutus: 'Über Uns'
+  products: 'Produkte'
+  logistics: 'Logistik'
+  team: 'Team'
+  locations: 'Standorte'
+  contact: 'Kontakt'
