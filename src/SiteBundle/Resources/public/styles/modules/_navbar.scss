@@ -2,8 +2,9 @@
 header {
   position: relative;
   padding: 1rem;
-  color: rgba($coal, 0.5);
-  background-color: $beaver;
+  color: $light-gray;
+  background-color: #3b434a;
+  box-shadow: 0 0px 6px 9px rgba($coal, 0.1);
 
   @include display(flex);
   @include flex-direction(row);
@@ -19,14 +20,17 @@ header {
   }
 
   a {
+    padding: 0.5rem;
     font-weight: 700;
     text-decoration: none;
     @include transition(all 0.6s);
 
-    color: rgba($coal, 0.5);
+    color: rgba($light-gray, 0.5);
 
     &:hover {
-      color: rgba($light-gray, 0.8);
+      color: $light-gray;
+      //background-color: rgba($gray, 0.8);
+
     }
   }
 
@@ -72,6 +76,7 @@ header nav.mobile {
 
   a {
     color: rgba($coal, 0.5);
+    padding: 1rem;
 
     &:hover {
       color: rgba($light-gray, 0.8);
@@ -85,7 +90,6 @@ header nav.mobile {
     @include flex-direction(column);
 
     li {
-      padding: 1rem;
       text-align: center;
     }
   }
@@ -148,25 +152,22 @@ header .hamburger {
 nav.desktop ul li {
 
   ul {
-    width: 100%;
     @include flex-direction(column);
-
     position: absolute;
+    width: 100%;
     left: 0;
     top: 2.2rem;
     display: none;
-
-    li:hover {
-      background-color: $chocolate-shade;
-    }
   }
 
   &:hover {
-    background-color: $beaver-shade;
-    ul { background-color: $beaver-shade;}
+    background-color: rgba($coal, 0.8);
 
     ul {
       @include display(flex);
+      background-color: $light-gray;
+      background-color: rgba($coal, 0.8);
+
     }
   }
 }
