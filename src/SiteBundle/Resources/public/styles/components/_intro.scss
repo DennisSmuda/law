@@ -18,17 +18,13 @@
 
   h2 {
     padding: 1rem;
-    background-color: rgba(5, 5, 5, 0.6);
-    color: $light-gray;
-  }
-  p {
-    background-color: rgba(5, 5, 5, 0.6);
-    padding: 1rem;
-    font-size: 1.4rem;
-    color: $light-gray;
-    line-height: 1.3;
   }
 
+  p {
+    padding: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
 
   .intro__text {
     width: 60%;
@@ -40,5 +36,4 @@
     @include flex-direction(column);
     justify-content: center;
   }
-
 }

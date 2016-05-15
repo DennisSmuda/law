@@ -61,13 +61,19 @@
 	  var $hamburger = $('.hamburger');
 	  var $mobileNav = $('nav.mobile');
 	  var $mobileOverlay = $('.mobile-menu-overlay');
+	  var $main = $('main');
+	  var $header = $('header');
+	
 	  $hamburger.on('click', function () {
-	    console.log('butz');
+	    $main.toggleClass('push');
+	    $header.toggleClass('push');
 	    $mobileNav.toggleClass('hidden');
 	    $mobileOverlay.toggleClass('hidden');
 	  });
 	
 	  $mobileOverlay.on('click', function () {
+	    $main.toggleClass('push');
+	    $header.toggleClass('push');
 	    $mobileOverlay.toggleClass('hidden');
 	    $mobileNav.toggleClass('hidden');
 	  });
