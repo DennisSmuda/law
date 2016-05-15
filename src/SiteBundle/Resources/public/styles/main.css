@@ -244,26 +244,9 @@ header nav.desktop {
 /** Mobile *******/
 /****************/
 header nav.mobile {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  box-direction: normal;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-direction: column;
-  padding-top: 4rem;
+  padding-top: 75px;
+  overflow-y: scroll;
   z-index: 1000;
-  background-color: #3b434a;
   position: absolute;
   width: 400px;
   height: 100vh;
@@ -303,6 +286,10 @@ header nav.mobile {
     header nav.mobile ul li {
       padding: 1rem;
       text-align: left; }
+      header nav.mobile ul li:before {
+        display: inline-block;
+        font-family: FontAwesome;
+        content: '\F105'; }
       header nav.mobile ul li li {
         padding: 0.5rem; }
   header nav.mobile.hidden {
@@ -433,6 +420,16 @@ header .hamburger {
         -webkit-transition-delay: 0.6s;
         -moz-transition-delay: 0.6s;
         transition-delay: 0.6s; }
+    .submenu-toggle.open:before {
+      transform: rotate(90deg); }
+  .submenu-toggle:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    color: rgba(245, 247, 250, 0.5);
+    content: "\F105";
+    -webkit-transition: -webkit-transform 0.6s;
+    -moz-transition: -moz-transform 0.6s;
+    transition: transform 0.6s; }
 
 ul.submenu {
   padding: 0.5rem 0 0; }
