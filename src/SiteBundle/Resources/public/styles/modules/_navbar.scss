@@ -203,6 +203,7 @@ header .hamburger {
 
     ul.submenu {
       li {
+        z-index: 1;
         display: block;
         opacity: 1;
         @include transform(translateY(0));
