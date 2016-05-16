@@ -28,7 +28,6 @@ $(document).ready(function () {
   // Escape closes menu
   $(document).keyup(function(e) {
     if (e.keyCode == 27) {
-      console.log('Butz');
       if (isMenuVisible) {
         closeMenu();
       }
@@ -46,8 +45,6 @@ $(document).ready(function () {
   $submenuToggle.on('click', (e) => {
     let thisMenu = $(e.target).parent();
     thisMenu.toggleClass('open');
-    //$submenuToggle.children().eq(0).toggleClass('open');
-
     // Set text to 'schließen' or get the original topic name from the first list item
     if (thisMenu.children().eq(0).text() !== 'Schließen') {
       thisMenu.children().eq(0).text('Schließen');

@@ -1,0 +1,16 @@
+
+.topics {
+  background-color: $beaver;
+  background-color: $chocolate-shade;
+  color: rgba($light-gray, 0.5);
+  padding: 2rem;
+}
+
+.topic {
+  width: 50%;
+
+  img {
+    width: 100%;
+  }
+}
+
