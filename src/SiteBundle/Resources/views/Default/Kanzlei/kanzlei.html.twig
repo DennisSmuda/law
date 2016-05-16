@@ -1,0 +1,43 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+
+{% block body %}
+
+  <main>
+
+    <div class="bg-image" style="background-image: url({{ asset('bundles/site/images/buerohaus.jpg') }})">
+      <div class="image-overlay">
+        <h1>Unsere Kanzlei</h1>
+      </div>
+    </div>
+
+    <section class="intro">
+      <div class="intro__inner">
+        <span class="intro__breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('site_unsere_kanzlei') }}">Unsere Kanzlei</a></span>
+        <h1>Kanzleigeschichte</h1>
+        <p> Die Kanzlei Eisel & Karrmann ist seit über 28 Jahren in ihren Räumen gegenüber dem Hauptbahnhof ansässig. Sie wurde in den 1970er Jahren als Kanzlei Zimmermann und Eisel gegründet und bis heute durch Herrn Rechtsanwalt Eisel fortgeführt. 1994 trat die - zunächst in Marl und Datteln tätige - Frau Rechtsanwältin Karrmann der Kanzlei bei und die Kanzlei erhielt ihren heutigen Namen. Im September 2011 trat Herr Rechtsanwalt Reimann der Kanzlei bei, nachdem er zunächst einige Jahre selbstständig ein Büro in Dortmund geführt hatte. </p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Unsere Philosophie</h1>
+        <p>Auch wenn die Zusammensetzung der Anwälte über die Jahre immer wieder einmal einem Wechsel unterworfen war, so ist das Selbstverständnis unserer Arbeit doch immer dasselbe geblieben: Die engagierte Arbeit als Dienstleistung für die vielfältigen Belange unserer Mandantschaft. </p>
+        <p>Um Ihre Ziele zu erreichen, verfügen wir nicht nur über die erforderliche Kompetenz, die durch unsere sich ständig weiter fortbildenden Anwälte garantiert wird, sondern auch über weitere qualifizierte und hervorragend ausgebildete nichtjuristische Mitarbeiter, die jederzeit bemüht sind, Ihnen das Mandatsverhältnis so angenehm und transparent wie möglich zu gestalten.</p>
+        <p>Wir sind der Überzeugung, dass unsere Mandanten nur dann rundum zufrieden sein können, wenn wir Ihr Anliegen mit der erforderlichen Hartnäckigkeit und dem notwendigen Fachwissen vertreten. Hierzu gehört es auch, Sie umfassend über die Erfolgsaussichten und Risiken eines prozessualen Vorgehens aufzuklären. Selbstverständlich sind wir stets bemüht, hierbei den sichersten und gleichzeitig kostengünstigsten Weg zu beschreiten. Außergerichtliche Konfliktbeilegung ist hierbei in den meisten Fällen das Mittel der Wahl.</p>
+        <p>Im Rahmen von Beratungsmandaten haben wir es uns zur Aufgabe gemacht, Risiken für unsere Mandanten - etwa bei der Vorbereitung von Verträgen oder der Gestaltung Allgemeiner Geschäftsbedingungen (AGB) - anhand der aktuellen Rechtsprechung zu minimieren und gleichwohl die für Sie vorteilhaftesten Regelungen zu treffen.</p>
+        <p>Auch wenn wir aufgrund unserer Mitarbeiter über fachliche Kompetenz in vielen Rechtsgebieten verfügen, gehört es unserer Meinung nach auch zu einer guten Kanzlei, einzugestehen, falls wir Sie nicht umfassend beraten können. In diesen Fällen sind wir uns nicht zu schade, Sie an kompetente Kollegen zu verweisen oder deren Rat einzuholen. Eine Vielzahl von kompetenten Kollegen haben wir aufgrund unserer langjährigen Erfahrung bereits als Kooperationspartner gewinnen können.</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Mandantenstruktur</h1>
+        <p>Die Kanzlei Eisel & Karrmann vertritt hauptsächlich Privatpersonen und mittelständische Unternehmen. Für unsere Mandanten stehen wir in aller Regel nicht nur als einmalige Interessenvertreter, sondern als langjähriger Rechtsberater in nahezu allen Rechtsfragen, mit denen Sie in Ihrem täglichen Leben und dem Geschäftsbetrieb konfrontiert werden, zur Verfügung.</p>
+      </div>
+    </section>
+
+  </main>
+
+{% endblock %}

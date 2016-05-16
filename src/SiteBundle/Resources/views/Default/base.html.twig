@@ -37,6 +37,86 @@
 <body>
 {% block navi %}{% endblock %}
 
+<header>
+
+    <h2> Eisel & Karrmann Rechtsanwälte </h2>
+
+    <nav class="desktop">
+        <ul>
+            <li><a href="#">Startseite</a></li>
+            <li><a href="#">Impressum</a></li>
+            <li><a href="#">Kontakt</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="hamburger-container">
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <nav class="mobile hidden">
+        <ul>
+
+            <li class="submenu-toggle">
+                <a href="#">Unsere Kanzlei</a>
+                <ul class="submenu">
+                    <li><a href="{{ path('site_unsere_kanzlei') }}">Unsere Kanzlei</a></li>
+                    <li><a href="{{ path('sekretariat') }}">Sekretariat</a></li>
+                    <li><a href="{{ path('sprechzeiten') }}">Sprechzeiten</a></li>
+                    <li><a href="{{ path('anfahrt') }}">Anfahrt</a></li>
+                </ul>
+            </li>
+
+            <li class="submenu-toggle ">
+                <a href="#">Anwälte</a>
+                <ul class="submenu">
+                    <li><a href="">Anwälte</a></li>
+                    <li><a href="">Rechtsanwalt und Notar Lutz Eisel</a></li>
+                    <li><a href="">Rechtsanwältin Eva Karrmann</a></li>
+                    <li><a href="">Rechtsanwalt Tobias Reimann</a></li>
+                </ul>
+            </li>
+
+            <li><a href="">Manifest</a></li>
+
+            <li class="submenu-toggle">
+                <a href="#">Rechtsgebiete</a>
+                <ul class="submenu">
+                    <li><a href="">Rechtsgebiete</a></li>
+                    <li><a href="">Strafrecht</a></li>
+                    <li><a href="">Bußgeldsachen</a></li>
+                    <li><a href="">Polizei- und Ordnungsrecht</a></li>
+                    <li><a href="">Psychiatrie (und Recht?)</a></li>
+                    <li><a href="">Familienrecht</a></li>
+                    <li><a href="">Verkehrsrecht</a></li>
+                    <li><a href="">Weiteres Zivilrecht</a></li>
+                </ul>
+            </li>
+
+            <li><a href="">Notariat</a></li>
+
+            <li class="submenu-toggle">
+                <a href="#">Aktuelles</a>
+                <ul class="submenu">
+                    <li><a href="">Aktuelles</a></li>
+                    <li><a href="">Rechtsprechung</a></li>
+                    <li><a href="">Veranstaltungen</a></li>
+                </ul>
+            </li>
+
+            <li><a href="">Kosten</a></li>
+            <li><a href="">Strafrechtlicher Notdienst</a></li>
+            <li><a href="">Links/Downloads</a></li>
+            <li><a href="">RA Manfred Nagel II</a></li>
+        </ul>
+    </nav>
+</header>
+
 
 {% block body %}{% endblock %}
 

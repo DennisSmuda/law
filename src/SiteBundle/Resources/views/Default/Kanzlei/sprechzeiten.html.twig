@@ -1,0 +1,59 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+
+{% block body %}
+
+  <main>
+
+    <section class="intro">
+      <div class="intro__inner">
+        <span class="intro__breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('site_unsere_kanzlei') }}">Unsere Kanzlei</a> > <a href="{{ path('sprechzeiten') }}">Sprechzeiten</a></span>
+        <h1>Öffnungszeiten</h1>
+        <img src="{{ asset('bundles/site/images/uhr.jpg') }}" alt="">
+        <p>In unserem Büro in Bochum sind wir in den folgenden Zeiten für Sie erreichbar:</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <table>
+          <tr>
+            <td>Montag</td>
+            <td>09:00 - 13:00 und 14:00 - 17:00 Uhr</td>
+          </tr>
+          <tr>
+            <td>Dienstag</td>
+            <td>09:00 - 13:00 und 14:00 - 17:00 Uhr</td>
+          </tr>
+          <tr>
+            <td>Mittwoch</td>
+            <td>09:00 - 13:00 und 14:00 - 17:00 Uhr</td>
+          </tr>
+          <tr>
+            <td>Donnerstag</td>
+            <td>09:00 - 13:00 und 14:00 - 17:00 Uhr</td>
+          </tr>
+          <tr>
+            <td>Freitag</td>
+            <td>09:00 - 13:00</td>
+          </tr>
+        </table>
+
+        <p>Selbstverständlich vereinbaren wir auch außerhalb der Bürozeiten einen Termin mit Ihnen, wenn Sie diese nicht wahrnehmen können.</p>
+
+      </div>
+    </section>
+
+    <section class="text-section important">
+      <div class="text-section__inner">
+        <h1>Notdienst</h1>
+        <p>Außerhalb der Öffnungszeiten erreichen Sie unseren Strafverteidiger-Notdienst unter der Nummer:</p>
+        <p>0234-9136717</p>
+        <p>Für den Anruf können Telefongebühren ab 2,9 Cent pro Minute aus dem Festnetz der Deutschen Telekom entstehen. Die Gebühren für Anrufe aus den Mobilfunknetzen können erheblich abweichen.</p>
+        <p>Bitte beachten Sie: Der Notruf führt keine allgemeine Rechtsberatung, etwa in zivilrechtlichen oder sozialrechtlichen Fragen, durch.</p>
+      </div>
+    </section>
+  </main>
+
+{% endblock %}

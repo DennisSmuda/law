@@ -29,7 +29,9 @@
   text-align: center;
 
   img {
-    width: 100%;
+    width: 50%;
+    @include align-self(center);
+    margin: 1rem;
   }
 
   &:hover {

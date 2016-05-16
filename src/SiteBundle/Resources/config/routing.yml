@@ -1,3 +1,19 @@
 site_homepage:
     path:     /
     defaults: { _controller: SiteBundle:Default:index }
+
+site_unsere_kanzlei:
+    path:     /kanzlei
+    defaults: { _controller: SiteBundle:Default:kanzlei }
+
+sekretariat:
+    path:     /kanzlei/sekretariat
+    defaults: { _controller: SiteBundle:Default:sekretariat }
+
+sprechzeiten:
+    path:     /kanzlei/sprechzeiten
+    defaults: { _controller: SiteBundle:Default:sprechzeiten }
+
+anfahrt:
+    path:     /kanzlei/anfahrt
+    defaults: { _controller: SiteBundle:Default:anfahrt }

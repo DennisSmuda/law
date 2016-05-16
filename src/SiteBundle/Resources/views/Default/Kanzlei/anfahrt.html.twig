@@ -1,0 +1,82 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+
+{% block body %}
+
+  <main>
+
+    <div class="bg-image" style="background-image: url({{ asset('bundles/site/images/buerohaus.jpg') }})">
+      <div class="image-overlay">
+        <h1>Unsere Kanzlei</h1>
+      </div>
+    </div>
+
+    <section class="intro">
+      <div class="intro__inner">
+        <span class="intro__breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('site_unsere_kanzlei') }}">Unsere Kanzlei</a> > <a
+                  href="{{ path('anfahrt') }}">Anfahrt</a></span>
+        <h1>So Finden Sie uns</h1>
+        <p>Unsere Kanzlei befindet sich im fünften Stock des Bürogebäudes am</p>
+        <p>
+          Kurt-Schumacher-Platz 8 <br>
+          44787 Bochum
+        </p>
+        <p>mitten in der Bochumer Innenstadt gegenüber dem Hauptbahnhof.</p>
+        <p>Ein Fahrstuhl ist vorhanden. Leider führt dieser aus baulichen Gründen nur bis zur vierten Etage. Sollte die unvermeidbare Treppe in unsere Büroräume ein Hindernis für Sie darstellen, geben Sie uns nur kurz vor dem Termin Bescheid, wir arrangieren einen anderen Besprechungsraum in der unmitelbaren Nähe zur Kanzlei oder empfangen Sie in der Anwaltshalle am Landgericht.</p>
+        <p>Für Ihre Anreise können Sie uns sowohl mit dem Auto, als auch mit allen öffentlichen Verkehrsmitteln problemlos erreichen.</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Anfahrt mit öffentlichen Verkehrsmitteln</h1>
+        <p>Zum Reiseplaner des VRR gelangen Sie <a href="http://www.vrr.de/de/fahrplanauskunft/index.html">hier</a>.</p>
+        <p>Sollten Sie von außerhalb des VRR anreisen, können Sie sich hier über die Verbrindungen der Deutschen Bahn AG informieren.</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Anfahrt mit dem PKW</h1>
+        <p>Mithilfe der Karte können Sie sich einen raschen Überblick verschaffen. Klicken Sie auf das Logo am unteren linken Rand der Karte, gelangen Sie zu einem Routenplaner. Zahlreiche Parkhäuser befinden sich in unmittelbarer Nähe des Büros.</p>
+      </div>
+    </section>
+
+    <section class="map"><div id="map"></div></section>
+
+    <script type="text/javascript">
+      var map;
+      var Position = {lat: 51.4796024, lng: 7.2198944}
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: Position,
+          zoom: 15,
+          scrollwheel: false,
+          navigationControl: false,
+          mapTypeControl: false,
+          scaleControl: false,
+          draggable: false,
+          disableDefaultUI: true,
+          styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+        });
+        var marker = new google.maps.Marker({
+          position: Position,
+          map: map,
+          title: 'Hello World!'
+        });
+        marker.addListener('click', function() {
+          window.open('https://www.google.de/maps/place/Dr.+Monika+Blank/@51.6118184,7.1937974,18z/data=!4m15!1m9!2m8!1spsychotherapie!3m6!1spsychotherapie!2sAuf+dem+Graben+2,+45657+Recklinghausen!3s0x47b8e340097d7cc7:0xb485e41a78f0d777!4m2!1d7.1948622!2d51.6118717!3m4!1s0x0000000000000000:0x75dbdef5eb54ef16!8m2!3d51.6118721!4d7.1948621', '_blank');
+        });
+      }
+    </script>
+
+
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDms1ZVf_8xGo9RsSL3sXbmUJ0UsEnN9FY&callback=initMap">
+    </script>
+
+
+  </main>
+
+{% endblock %}
