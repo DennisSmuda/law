@@ -26,4 +26,8 @@ class DefaultController extends Controller
     public function anfahrtAction() {
         return $this->render('SiteBundle:Default/Kanzlei:anfahrt.html.twig');
     }
+
+    public function anwaltAction() {
+        return $this->render('SiteBundle:Default/Anwälte:anwaelte.html.twig');
+    }
 }

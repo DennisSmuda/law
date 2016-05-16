@@ -17,3 +17,7 @@ sprechzeiten:
 anfahrt:
     path:     /kanzlei/anfahrt
     defaults: { _controller: SiteBundle:Default:anfahrt }
+
+anwaelte:
+    path:     /anwaelte
+    defaults: { _controller: SiteBundle:Default:anwalt }
