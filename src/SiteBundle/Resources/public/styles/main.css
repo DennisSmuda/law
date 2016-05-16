@@ -484,10 +484,7 @@ header .hamburger {
     transform: translateX(100vw); }
 
 .submenu-toggle {
-  height: 3rem;
-  -webkit-transition: height, 0.6s;
-  -moz-transition: height, 0.6s;
-  transition: height, 0.6s; }
+  height: 3rem; }
   .submenu-toggle:hover, .submenu-toggle.open {
     background-color: rgba(245, 247, 250, 0.2); }
   .submenu-toggle.open {
@@ -497,6 +494,10 @@ header .hamburger {
       display: block;
       opacity: 1; }
     .submenu-toggle.open:before {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
       transform: rotate(90deg); }
   .submenu-toggle:before {
     display: inline-block;

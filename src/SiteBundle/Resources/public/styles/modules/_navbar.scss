@@ -193,7 +193,6 @@ header .hamburger {
 
 .submenu-toggle {
   height: 3rem;
-  @include transition(height, 0.6s);
 
   &:hover, &.open {
     background-color: rgba($light-gray, 0.2);
@@ -211,7 +210,7 @@ header .hamburger {
     }
 
     &:before {
-      transform: rotate(90deg);
+      @include transform(rotate(90deg));
     }
   }
 
