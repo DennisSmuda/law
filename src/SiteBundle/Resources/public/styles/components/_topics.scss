@@ -2,15 +2,51 @@
 .topics {
   background-color: $beaver;
   background-color: $chocolate-shade;
-  color: rgba($light-gray, 0.5);
-  padding: 2rem;
+  padding: 4rem;
+
+  -js-display: flex;
+  @include display(flex);
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
 }
 
 .topic {
-  width: 50%;
+  width: 25%;
+
+  &, a { color: rgba($light-gray, 0.7); text-decoration: none; }
+
+  a {
+    height: 100%;
+    @include display(flex);
+    @include flex-direction(column);
+    @include justify-content(space-between);
+  }
+
+  background-color: rgba($coal, 0.3);
+  padding: 2rem;
+  opacity: 0.5;
+  @include transition(opacity 0.6s);
+  text-align: center;
 
   img {
     width: 100%;
   }
+
+  &:hover {
+    opacity: 1;
+  }
+
+
+  @include max-screen(1200px) {
+    width: 50%;
+  }
 }
 
+
+.topic h2 {
+  @include transition(all 0.6s);
+
+  &:hover {
+    color: $light-gray;
+  }
+}

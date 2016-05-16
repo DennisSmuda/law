@@ -7,6 +7,10 @@
 
 body {
   background-color: #3b434a;
+
+  &.noflow {
+    overflow: hidden;
+  }
 }
 
 main {

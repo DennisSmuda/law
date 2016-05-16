@@ -8,6 +8,7 @@ $(document).ready(function () {
   const $submenuToggle = $('.submenu-toggle > a');
   const $main = $('main');
   const $header = $('header');
+  const $body = $('body');
 
   let isMenuVisible = false;
 
@@ -18,6 +19,7 @@ $(document).ready(function () {
     $mobileNav.toggleClass('hidden');
     $mobileOverlay.toggleClass('hidden');
     isMenuVisible = !isMenuVisible;
+    $body.toggleClass('noflow');
   });
 
   // Overlay Event listener
@@ -39,6 +41,7 @@ $(document).ready(function () {
     $header.toggleClass('push');
     $mobileOverlay.toggleClass('hidden');
     $mobileNav.toggleClass('hidden');
+    $body.toggleClass('noflow');
     isMenuVisible = !isMenuVisible;
   }
 
