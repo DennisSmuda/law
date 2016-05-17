@@ -1,8 +1,6 @@
 
 .topics {
-  background-color: $beaver;
-  background-color: $chocolate-shade;
-  padding: 4rem;
+  background-color: $dark-gray;
 
   -js-display: flex;
   @include display(flex);

@@ -130,9 +130,7 @@ main {
   justify-content: center; }
 
 .topics {
-  background-color: #BAA286;
-  background-color: #7B7163;
-  padding: 4rem;
+  background-color: #656D78;
   -js-display: flex;
   display: -webkit-box;
   display: -moz-box;
@@ -273,7 +271,6 @@ main {
 
 footer {
   padding: 4rem;
-  margin-top: 4rem;
   background-color: #3b434a;
   color: rgba(245, 247, 250, 0.5); }
 
