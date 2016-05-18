@@ -84,13 +84,14 @@ header nav.desktop {
 header nav.mobile {
   padding-top: 75px;
   overflow-y: scroll;
+  background-color: rgba($coal, 0.9);
 
   z-index: 1000;
   position: absolute;
   width: $mobile-nav-width;
   height: 100vh;
   top: 0;
-  left: -$mobile-nav-width;
+  left: 0;
   @include transform(translateX(0px));
   @include transition(all 0.8s);
 
@@ -102,19 +103,24 @@ header nav.mobile {
     }
   }
 
-  ul {
+  > ul {
     list-style-type: none;
     @include display(flex);
     @include flex-direction(column);
 
-    li {
+    > li {
+      position: relative;
       padding: 1rem;
       text-align: left;
       &:before {
+        position: absolute;
+        left: 0.4rem;
+        top: 21px;
         color: rgba($light-gray, 0.5);
+        font-size: 0.7rem;
         display: inline-block;
         font-family: FontAwesome;
-        content: '\f105';
+        content: '\f068';
       }
 
       li { padding: 0.5rem;}
@@ -186,6 +192,7 @@ header .hamburger {
 
 
   &.hidden {
+    visibility: hidden;
     transform: translateX(100vw);
   }
 
@@ -215,10 +222,7 @@ header .hamburger {
   }
 
   &:before {
-    display: inline-block;
-    font-family: FontAwesome;
-    color: rgba($light-gray, 0.8) !important;
-    content: "\f105";
+    content: "\f067" !important;
   }
 
 }

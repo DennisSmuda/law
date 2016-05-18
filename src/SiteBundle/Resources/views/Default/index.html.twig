@@ -1,114 +1,120 @@
-
 {% extends 'SiteBundle:Default:base.html.twig' %}
 
 
 {% block body %}
 
-<main>
+  <main>
 
-  <section class="intro">
+    <section class="intro">
 
-    <div class="bg-image" style="background-image: url({{ asset('bundles/site/images/Bergbaumuseum.jpg') }})">
-      <div class="image-overlay"></div>
-    </div>
+      <div class="bg-image" style="background-image: url({{ asset('bundles/site/images/Bergbaumuseum.jpg') }})">
+        <div class="image-overlay"></div>
+      </div>
 
-    <div class="intro__inner">
-      <h1>Eisel & Karrmann Rechtsanwälte</h1>
+      <div class="intro__inner">
+        <h1>Eisel & Karrmann Rechtsanwälte</h1>
 
-      <p>
-        Sie benötigen anwaltlichen oder notariellen Rat in Ihren Angelegenheiten und eine Übersicht über die zu erwartenden Kosten? Wir heißen Sie herzlich willkommen auf den Seiten der Kanzlei Eisel und Karrmann, Ihrem Anwaltsbüro und Notariat in Bochum.
-      </p>
-      <p>
-        Unsere Anwälte beraten Sie kompetent und zuverlässig in ihren Rechtsbereichen. Selbstverständlich vertreten wir Ihre Interessen auch vor Gericht, wenn dies erforderlich sein sollte. Und sollten wir Ihnen einmal nicht selbst weiterhelfen können, werden wir gerne für Sie den Kontakt zu unseren kompetenten Kooperationspartnern herstellen, damit Sie immer bestens beraten sind.
-      </p>
+        <p>
+          Sie benötigen anwaltlichen oder notariellen Rat in Ihren Angelegenheiten und eine Übersicht über die zu
+          erwartenden Kosten? Wir heißen Sie herzlich willkommen auf den Seiten der Kanzlei Eisel und Karrmann, Ihrem
+          Anwaltsbüro und Notariat in Bochum.
+        </p>
+        <p>
+          Unsere Anwälte beraten Sie kompetent und zuverlässig in ihren Rechtsbereichen. Selbstverständlich vertreten
+          wir Ihre Interessen auch vor Gericht, wenn dies erforderlich sein sollte. Und sollten wir Ihnen einmal nicht
+          selbst weiterhelfen können, werden wir gerne für Sie den Kontakt zu unseren kompetenten Kooperationspartnern
+          herstellen, damit Sie immer bestens beraten sind.
+        </p>
 
-      <p>Wir laden Sie ein, uns auf den folgenden Seiten näher kennenzulernen! </p>
+        <p>Wir laden Sie ein, uns auf den folgenden Seiten näher kennenzulernen! </p>
 
-    </div>
+      </div>
 
-  </section>
+    </section>
 
-  <section class="topics">
+    <section class="topics">
 
-    <div class="topic">
-      <div class="topic__bg" style="background-image: url('{{ asset('bundles/site/images/buerohaus.jpg') }}')">
-        <div class="topic__text">
-          <h2>Unsere Kanzlei</h2>
-          <p>Kanzlei Eisel & Karrmann Philosophie, Leistungen und Personal</p>
+      <div class="topic">
+        <div class="topic__bg" style="background-image: url('{{ asset('bundles/site/images/buerohaus.jpg') }}')">
+          <div class="topic__text">
+            <h2>Unsere Kanzlei</h2>
+            <p>Kanzlei Eisel & Karrmann Philosophie, Leistungen und Personal</p>
+          </div>
         </div>
       </div>
-    </div>
 
 
-    <div class="topic">
-      <div class="topic__bg" style="background-image: url('{{ asset('bundles/site/images/nrw-wappen.jpg') }}')">
-        <div class="topic__text">
-          <a href="{{ path('homepage') }}">
-            <h2>Notariat</h2>
-            <p>Beurkundungen, Beglaubigungen, Grundstückskauf, etc.</p>
-          </a>
+      <div class="topic">
+        <div class="topic__bg" style="background-image: url('{{ asset('bundles/site/images/nrw-wappen.jpg') }}')">
+          <div class="topic__text">
+            <a href="{{ path('homepage') }}">
+              <h2>Notariat</h2>
+              <p>Beurkundungen, Beglaubigungen, Grundstückskauf, etc.</p>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="topic">
-      <div class="topic__bg" style="background-image: url('{{ asset('bundles/site/images/robe.jpg') }}')">
-        <div class="topic__text">
-          <h2>Anwälte</h2>
-          <p>Unsere Anwälte freuen sich, Sie zu begrüßem</p>
+      <div class="topic">
+        <div class="topic__bg" style="background-image: url('{{ asset('bundles/site/images/robe.jpg') }}')">
+          <div class="topic__text">
+            <h2>Anwälte</h2>
+            <p>Unsere Anwälte freuen sich, Sie zu begrüßem</p>
+          </div>
         </div>
       </div>
-    </div>
 
 
-    <div class="topic">
-      <div class="topic__bg" style="background-image: url('{{ asset('bundles/site/images/bgh.jpg') }}')">
-        <div class="topic__text">
-          <h2>Aktuelles</h2>
-          <p>Neuigkeiten der Kanzlei, Veranstaltungen, aktuelle Urteile</p>
+      <div class="topic">
+        <div class="topic__bg" style="background-image: url('{{ asset('bundles/site/images/bgh.jpg') }}')">
+          <div class="topic__text">
+            <h2>Aktuelles</h2>
+            <p>Neuigkeiten der Kanzlei, Veranstaltungen, aktuelle Urteile</p>
+          </div>
         </div>
       </div>
-    </div>
 
 
-    <div class="topic">
-      <div class="topic__bg" style="background-image: url('{{ asset('bundles/site/images/manifest.jpg') }}')">
-        <div class="topic__text">
-          <h2>Manifest</h2>
-          <p>Manifest zur Reduzierung des Aufenthalts in der Forensik ( 63 StGB) Die aktuellen Pläne der Bun...</p>
+      <div class="topic">
+        <div class="topic__bg" style="background-image: url('{{ asset('bundles/site/images/manifest.jpg') }}')">
+          <div class="topic__text">
+            <h2>Manifest</h2>
+            <p>Manifest zur Reduzierung des Aufenthalts in der Forensik ( 63 StGB) Die aktuellen Pläne der Bun...</p>
+          </div>
         </div>
       </div>
-    </div>
 
 
-    <div class="topic">
-      <div class="topic__bg" style="background-image: url('{{ asset('bundles/site/images/schoenfelder.jpg') }}')">
-        <div class="topic__text">
-          <h2>Rechtsgebiete</h2>
-          <p>Hier sind wir für Sie tätig</p>
+      <div class="topic">
+        <div class="topic__bg" style="background-image: url('{{ asset('bundles/site/images/schoenfelder.jpg') }}')">
+          <div class="topic__text">
+            <h2>Rechtsgebiete</h2>
+            <p>Hier sind wir für Sie tätig</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="topic">
-      <div class="topic__bg" style="background-image: url('{{ asset('bundles/site/images/kosten.jpg') }}')">
-        <div class="topic__text">
-          <h2>Kosten</h2>
-          <p>Was kostet anwaltliche Hilfe?</p>
+      <div class="topic">
+        <div class="topic__bg" style="background-image: url('{{ asset('bundles/site/images/kosten.jpg') }}')">
+          <div class="topic__text">
+            <h2>Kosten</h2>
+            <p>Was kostet anwaltliche Hilfe?</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="topic">
-      <div class="topic__bg" style="background-image: url('{{ asset('bundles/site/images/24h.jpg') }}')">
-        <div class="topic__text">
-          <h2>Strafrechtlicher Notdienst</h2>
-          <p>Was kostet anwaltliche Hilfe?</p>
+      <div class="topic">
+        <div class="topic__bg" style="background-image: url('{{ asset('bundles/site/images/24h.jpg') }}')">
+          <div class="topic__text">
+            <h2>Strafrechtlicher Notdienst</h2>
+            <p>Was kostet anwaltliche Hilfe?</p>
+          </div>
         </div>
       </div>
-    </div>
 
-  </section>
+    </section>
+
+  </main>
 
 
 {% endblock %}

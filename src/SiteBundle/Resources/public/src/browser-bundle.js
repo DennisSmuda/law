@@ -60,7 +60,7 @@
 	  var $mobileNav = $('nav.mobile');
 	  var $mobileOverlay = $('.mobile-menu-overlay');
 	  var $submenuToggle = $('.submenu-toggle > a');
-	  var $main = $('main');
+	  var $siteWrapper = $('site-wrapper');
 	  var $header = $('header');
 	  var $body = $('body');
 	
@@ -68,8 +68,8 @@
 	
 	  // Hamburger Event Listener
 	  $hamburger.on('click', function () {
-	    $main.toggleClass('push');
-	    $header.toggleClass('push');
+	    $siteWrapper.toggleClass('push');
+	    //$header.toggleClass('push');
 	    $mobileNav.toggleClass('hidden');
 	    $mobileOverlay.toggleClass('hidden');
 	    isMenuVisible = !isMenuVisible;
@@ -91,8 +91,8 @@
 	  });
 	
 	  function closeMenu() {
-	    $main.toggleClass('push');
-	    $header.toggleClass('push');
+	    $siteWrapper.toggleClass('push');
+	    //$header.toggleClass('push');
 	    $mobileOverlay.toggleClass('hidden');
 	    $mobileNav.toggleClass('hidden');
 	    $body.toggleClass('noflow');

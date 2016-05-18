@@ -6,7 +6,7 @@ $(document).ready(function () {
   const $mobileNav = $('nav.mobile');
   const $mobileOverlay = $('.mobile-menu-overlay');
   const $submenuToggle = $('.submenu-toggle > a');
-  const $main = $('main');
+  const $siteWrapper = $('site-wrapper');
   const $header = $('header');
   const $body = $('body');
 
@@ -14,8 +14,8 @@ $(document).ready(function () {
 
   // Hamburger Event Listener
   $hamburger.on('click', () => {
-    $main.toggleClass('push');
-    $header.toggleClass('push');
+    $siteWrapper.toggleClass('push');
+    //$header.toggleClass('push');
     $mobileNav.toggleClass('hidden');
     $mobileOverlay.toggleClass('hidden');
     isMenuVisible = !isMenuVisible;
@@ -37,8 +37,8 @@ $(document).ready(function () {
   });
 
   function closeMenu() {
-    $main.toggleClass('push');
-    $header.toggleClass('push');
+    $siteWrapper.toggleClass('push');
+    //$header.toggleClass('push');
     $mobileOverlay.toggleClass('hidden');
     $mobileNav.toggleClass('hidden');
     $body.toggleClass('noflow');
