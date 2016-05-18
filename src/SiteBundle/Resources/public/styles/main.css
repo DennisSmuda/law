@@ -413,20 +413,16 @@ header nav.desktop {
 /** Mobile *******/
 /****************/
 header nav.mobile {
-  padding-top: 75px;
+  margin-top: 75px;
   overflow-y: scroll;
   background-color: rgba(60, 59, 61, 0.9);
+  background-color: #525d66;
   z-index: 1000;
   position: absolute;
   width: 400px;
   height: 100vh;
   top: 0;
   left: 0;
-  -webkit-transform: translateX(0px);
-  -moz-transform: translateX(0px);
-  -ms-transform: translateX(0px);
-  -o-transform: translateX(0px);
-  transform: translateX(0px);
   -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;
   transition: all 0.8s; }
@@ -455,12 +451,12 @@ header nav.mobile {
     -ms-flex-direction: column; }
     header nav.mobile > ul > li {
       position: relative;
-      padding: 1rem;
+      padding: 1rem 2rem;
       text-align: left; }
       header nav.mobile > ul > li:before {
         position: absolute;
-        left: 0.4rem;
-        top: 21px;
+        left: 1rem;
+        top: 1.3rem;
         color: rgba(245, 247, 250, 0.5);
         font-size: 0.7rem;
         display: inline-block;
@@ -469,11 +465,7 @@ header nav.mobile {
       header nav.mobile > ul > li li {
         padding: 0.5rem; }
   header nav.mobile.hidden {
-    -webkit-transform: translateX(-400px);
-    -moz-transform: translateX(-400px);
-    -ms-transform: translateX(-400px);
-    -o-transform: translateX(-400px);
-    transform: translateX(-400px); }
+    left: -400px; }
 
 header nav.mobile > ul > li {
   border-bottom: 1px solid rgba(245, 247, 250, 0.3); }
@@ -533,18 +525,17 @@ header .hamburger {
   width: 100vw;
   height: 100vh;
   top: 0;
-  left: auto;
+  left: 400px;
   right: 0;
   bottom: 0;
   background-color: rgba(60, 59, 61, 0.3);
-  transform: translateX(400px);
-  -webkit-transition: all 0.6s;
-  -moz-transition: all 0.6s;
-  transition: all 0.6s;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  transition: all 0.8s;
   z-index: 9999; }
   .mobile-menu-overlay.hidden {
     visibility: hidden;
-    transform: translateX(100vw); }
+    left: 100vw; }
 
 .submenu-toggle {
   height: 3rem; }
