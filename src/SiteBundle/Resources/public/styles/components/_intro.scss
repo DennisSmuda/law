@@ -1,24 +1,6 @@
 
 .intro {
 
-  &__inner {
-    max-width: 600px;
-    margin: auto;
-    padding: 2rem 0;
-  }
-
-  &__breadcrumbs {
-    @include inner-middle(600px);
-    padding: 2rem 1rem;
-    color: rgba($coal, 0.4);
-
-    a {
-      color: rgba($coal, 0.4);
-      @include transition(all 0.6s);
-      &:hover { color: rgba($coal, 0.8); }
-    }
-  }
-
   img {
     width: auto;
     box-shadow: 0 0 10px 4px rgba(0,0,0,0.1);
@@ -37,14 +19,23 @@
     line-height: 1.7;
   }
 
-  .intro__text {
-    width: 60%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 1rem;
 
-    @include display(flex);
-    @include flex-direction(column);
-    justify-content: center;
-  }
+}
+
+.intro__inner {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+
+.intro__text {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+
+  @include display(flex);
+  @include flex-direction(column);
+  justify-content: center;
 }

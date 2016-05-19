@@ -1,0 +1,46 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+{% block body %}
+
+  <main>
+
+    <section class="attorney">
+      <div class="attorney__inner">
+        <span class="breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('anwaelte') }}">Anwälte</a> > <a href="{{ path('lutzEisel') }}">Rechtsanwalt und Notar Lutz Eisel</a></span>
+        <h1>Rechtsanwältin Eva Karrmann</h1>
+        <img src="{{ asset('bundles/site/images/eva-karrmann.jpg') }}" alt="">
+        <h3>Guten Tag,</h3>
+        <p>ich freue mich über Ihr Interesse an unserer Kanzlei. Hier ein paar Informationen zu meiner Person:</p>
+        <p>Ich habe 1975 Abitur gemacht und dann von 1975 – 1981 in Münster Rechtswissenschaft studiert,
+          im Mai 1981 dann das 1.jur. Staatsexamen bestanden. Es schloss sich dann der Referendardienst an, den ich ebenfalls in Münster ableistete. Im Mai 1984 bestand ich das 2. jur. Staatsexamen und begann im gleichen Jahr meine berufliche Tätigkeit als Rechtsanwältin.
+        </p>
+        <p>Hierbei habe ich Erfahrungen in verschiedenen Kanzleien und Orten gesammelt, ich war zunächst in Marl tätig, dann in Datteln und – seit 1994 – in Bochum in der Kanzlei Eisel und Karrmann.</p>
+        <p>Ich bin verheiratet und habe einen Sohn und eine Tochter.</p>
+        <p>Meine Tätigkeitsschwerpunkte liegen auf dem Gebiet des Familienrechts, des Zivilrechts (also u. a. des Vertragsrechts, des Schadenersatzrechts, des Mietrechts) sowie des Arbeits- und Verkehrsrechts.</p>
+        <p>Gerne werde ich mich engagiert Ihren Problemen widmen, mit Ihnen gemeinsam eine Lösungsstrategie entwickeln und ggf. Ihre Interessen vor Gericht vertreten.</p>
+
+      </div>
+    </section>
+
+    <section class="attorney">
+      <div class="attorney__inner">
+        <h2>Mitgliedschaften</h2>
+        <ul>
+          <li><a href="http://www.strafverteidigervereinigung-nrw.de/">Strafverteidigervereinigung NRW e.V.</a></li>
+          <li><a href="http://www.rav.de/start/">Republikanischer Anwälte- und Anwältinnenverein (RAV)</a></li>
+          <li><a href="http://www.bochumer-anwaltverein.de/">Bochumer Anwalt- & Notarverein</a></li>
+          <li><a href="http://www.dgsp-ev.de/">Deutsche Gesellschaft für Soziale Psychiatrie e. V.</a></li>
+          <li><a href="http://www.psychosoziale-betreuung.de/">Verein für Psychosoziale Betreuung</a></li>
+          <li><a href="http://www.ruhrboss.de/">Ruhrboss</a></li>
+        </ul>
+
+
+
+
+      </div>
+    </section>
+
+  </main>
+
+{% endblock %}

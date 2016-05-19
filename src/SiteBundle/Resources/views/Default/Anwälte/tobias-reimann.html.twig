@@ -1,0 +1,90 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+{% block body %}
+
+  <main>
+
+    <section class="attorney">
+      <div class="attorney__inner">
+        <span class="breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('anwaelte') }}">Anwälte</a> > <a href="{{ path('lutzEisel') }}">Rechtsanwalt Tobias Reimann</a></span>
+        <h1>Rechtsanwalt Tobias Reimann</h1>
+        <img src="{{ asset('bundles/site/images/tobias-reimann.jpg') }}" alt="tobias-reimann">
+        <p>Herr Rechtsanwalt Reimann betreut Sie in allen strafrechtlichen Bereichen, im Polizei- und Ordnungsrecht und auf dem Gebiet des SGB II, besser bekannt als "Hartz 4".</p>
+      </div>
+    </section>
+
+    <section class="attorney-cv">
+      <div class="attorney__inner">
+        <h2>Lebenslauf</h2>
+
+        <table>
+          <tr>
+            <td>1995</td>
+            <td>Abitur</td>
+          </tr>
+          <tr>
+            <td>1996 – 2002</td>
+            <td>Studium der Rechtswissenschaften in Marburg an der Lahn und Bochum</td>
+          </tr>
+          <tr>
+            <td>2002</td>
+            <td>Erstes juristisches Staatsexamen Schwerpunkt: Strafrecht</td>
+          </tr>
+          <tr>
+            <td>2002 - 2004</td>
+            <td>Juristischer Vorbereitungsdienst am Landgericht Dortmund </td>
+          </tr>
+          <tr>
+            <td>2003 - 2004</td>
+            <td>Vorsitzender des Bezirkspersonlarates der Rechtsreferendare am OLG Hamm </td>
+          </tr>
+          <tr>
+            <td>2004</td>
+            <td>Zweites juritisches Staatsexamen Schwerpunkt: Strafrecht</td>
+          </tr>
+          <tr>
+            <td>2005</td>
+            <td>Wissenschaftlicher Mitarbeiter an einem Lehrstuhl für Strafrecht (Prof. Dr. Bernsmann) an der Ruhr-Universität Bochum</td>
+          </tr>
+          <tr>
+            <td>2006</td>
+            <td>Zulassung zur Rechtsanwaltschaft</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Gründung der Kanzlei Viegener & Kollegen Dortmund</td>
+          </tr>
+          <tr>
+            <td>2008</td>
+            <td>Eintritt in die Bürogemeinschaft Holzky Rechtsanwälte und Notar</td>
+          </tr>
+          <tr>
+            <td>seit 2011</td>
+            <td>Rechtsanwalt in der Kanzlei Eisel & Karrmann, Bochum</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="attorney">
+      <div class="attorney__inner">
+        <h2>Mitgliedschaften</h2>
+        <ul>
+          <li><a href="http://www.bochumer-anwaltverein.de/">Bochumer Anwaltverein</a></li>
+          <li><a href="http://www.juristenges-do.de/">Dortmunder Juristengesellschaft</a></li>
+          <li><a href="http://anwaltverein.de/de/">Deutscher Anwaltverein</a></li>
+          <li><a href="http://www.strafverteidigervereinigung-nrw.de/">Strafverteidigung NRW</a></li>
+          <li><a href="http://www.psychosoziale-betreuung.de/">Verein für Psychosoziale Betreuung</a></li>
+          <li><a href="http://www.dajv.de/">Deutsch-Amerikanische Juristenvereinigung</a></li>
+        </ul>
+
+
+
+
+      </div>
+    </section>
+
+  </main>
+
+{% endblock %}

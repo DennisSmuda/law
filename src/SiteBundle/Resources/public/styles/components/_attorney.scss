@@ -1,0 +1,75 @@
+
+.attorney, .attorney-cv {
+
+  img {
+    width: auto;
+    max-width: 400px;
+    box-shadow: 0 0 10px 4px rgba(0,0,0,0.1);
+    margin :2rem;
+    float: right;
+  }
+
+  h1 {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  h2 {
+    padding: 1rem;
+  }
+
+  p {
+    padding: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.7;
+  }
+
+  ul {
+    padding-left: 2.5rem;
+  }
+
+  li {
+    padding: 0.5rem;
+  }
+
+
+
+}
+
+.attorney__inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+
+.attorney__text {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+
+  @include display(flex);
+  @include flex-direction(column);
+  justify-content: center;
+}
+
+
+// Lebenslauf
+.attorney-cv {
+  table td {
+    &:first-child {
+      width: 15%;
+    }
+  }
+}
+
+.attorney ul {
+  a, a:visited, a:active {
+    color: $blue-jeans;
+  }
+
+  a:hover {
+    color: darken($blue-jeans, 10);
+  }
+}

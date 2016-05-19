@@ -21,3 +21,7 @@ anfahrt:
 anwaelte:
     path:     /anwaelte
     defaults: { _controller: SiteBundle:Default:anwalt }
+
+lutzEisel:
+    path:     /lutz-eisel
+    defaults: { _controller: SiteBundle:Default:lutzEisel }

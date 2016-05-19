@@ -30,4 +30,8 @@ class DefaultController extends Controller
     public function anwaltAction() {
         return $this->render('SiteBundle:Default/Anwälte:anwaelte.html.twig');
     }
+
+    public function lutzEiselAction() {
+        return $this->render('@Site/Default/Anwälte/lutz-eisel.html.twig');
+    }
 }

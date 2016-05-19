@@ -38,7 +38,7 @@ header {
   }
 
   @include max-screen($tablet-small) {
-    @include justify-content(space-between);    
+    @include justify-content(space-between);
   }
 
 
@@ -50,6 +50,10 @@ header {
   }
 }
 
+
+/******************/
+/** Desktop ******/
+/****************/
 header nav.desktop {
   @include flex(1);
   font-family: 'Lato';
@@ -85,7 +89,7 @@ header nav.mobile {
   margin-top: 75px;
   overflow-y: scroll;
   background-color: rgba($coal, 0.9);
-  background-color: lighten($bgcolor, 10);
+  background-color: lighten($bgcolor, 5);
 
   z-index: 1000;
   position: absolute;

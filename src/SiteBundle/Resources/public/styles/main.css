@@ -72,24 +72,6 @@ body {
 /**=======================**/
 /** Components **========**/
 /**=====================**/
-.intro__inner {
-  max-width: 600px;
-  margin: auto;
-  padding: 2rem 0; }
-
-.intro__breadcrumbs {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-  color: rgba(60, 59, 61, 0.4); }
-  .intro__breadcrumbs a {
-    color: rgba(60, 59, 61, 0.4);
-    -webkit-transition: all 0.6s;
-    -moz-transition: all 0.6s;
-    transition: all 0.6s; }
-    .intro__breadcrumbs a:hover {
-      color: rgba(60, 59, 61, 0.8); }
-
 .intro img {
   width: auto;
   box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
@@ -105,7 +87,12 @@ body {
   font-size: 1.3rem;
   line-height: 1.7; }
 
-.intro .intro__text {
+.intro__inner {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem 0; }
+
+.intro__text {
   width: 60%;
   height: 100%;
   margin: 0 auto;
@@ -275,6 +262,69 @@ body {
     .staff a:hover {
       color: #F5F7FA; }
 
+.attorney img, .attorney-cv img {
+  width: auto;
+  max-width: 400px;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  margin: 2rem;
+  float: right; }
+
+.attorney h1, .attorney-cv h1 {
+  padding: 1rem;
+  font-size: 2rem; }
+
+.attorney h2, .attorney-cv h2 {
+  padding: 1rem; }
+
+.attorney p, .attorney-cv p {
+  padding: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.7; }
+
+.attorney ul, .attorney-cv ul {
+  padding-left: 2.5rem; }
+
+.attorney li, .attorney-cv li {
+  padding: 0.5rem; }
+
+.attorney__inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem; }
+
+.attorney__text {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  justify-content: center; }
+
+.attorney-cv table td:first-child {
+  width: 15%; }
+
+.attorney ul a, .attorney ul a:visited, .attorney ul a:active {
+  color: #5D9CEC; }
+
+.attorney ul a:hover {
+  color: #2f80e7; }
+
 footer {
   padding: 4rem;
   background-color: #3b434a;
@@ -370,6 +420,9 @@ header {
   header.push {
     transform: translateX(400px); }
 
+/******************/
+/** Desktop ******/
+/****************/
 header nav.desktop {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -416,7 +469,7 @@ header nav.mobile {
   margin-top: 75px;
   overflow-y: scroll;
   background-color: rgba(60, 59, 61, 0.9);
-  background-color: #525d66;
+  background-color: #465058;
   z-index: 1000;
   position: absolute;
   width: 400px;
@@ -564,8 +617,9 @@ ul.submenu {
     opacity: 0; }
 
 .bg-image {
-  height: 60vh;
-  background-size: cover; }
+  height: 100vh;
+  background-size: cover;
+  background-position: center; }
   .bg-image .image-overlay {
     width: 100%;
     height: 100%;
@@ -641,17 +695,30 @@ ul.submenu {
   background-color: rgba(216, 51, 74, 0.8);
   color: rgba(255, 255, 255, 0.9); }
 
-.text-section table {
+table {
   width: 100%;
+  padding: 0 1rem;
   font-size: 1.2rem; }
-  .text-section table tr {
+  table tr {
     -webkit-transition: background-color, 0.6s;
     -moz-transition: background-color, 0.6s;
     transition: background-color, 0.6s; }
-    .text-section table tr:hover {
+    table tr:hover {
       background-color: rgba(60, 59, 61, 0.1); }
-  .text-section table td {
+  table td {
     padding: 0.5rem; }
+
+.breadcrumbs {
+  display: block;
+  padding: 2rem 1rem 1rem;
+  color: rgba(60, 59, 61, 0.4); }
+  .breadcrumbs a {
+    color: rgba(60, 59, 61, 0.4);
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    transition: all 0.6s; }
+    .breadcrumbs a:hover {
+      color: rgba(60, 59, 61, 0.8); }
 
 section.map {
   height: 400px; }
