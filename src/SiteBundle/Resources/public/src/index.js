@@ -14,29 +14,22 @@ $(document).ready(function () {
 
   // Hamburger Event Listener
   $hamburger.on('click', () => {
-    $siteWrapper.toggleClass('push');
-    //$header.toggleClass('push');
-    $mobileNav.toggleClass('hidden');
-    $mobileOverlay.toggleClass('hidden');
-    isMenuVisible = !isMenuVisible;
-    $body.toggleClass('noflow');
+    toggleMenu();
   });
 
   // Overlay Event listener
   $mobileOverlay.on('click', () => {
-    closeMenu();
+    toggleMenu();
   });
 
   // Escape closes menu
   $(document).keyup(function(e) {
     if (e.keyCode == 27) {
-      if (isMenuVisible) {
-        closeMenu();
-      }
+      toggleMenu();
     }
   });
 
-  function closeMenu() {
+  function toggleMenu() {
     $siteWrapper.toggleClass('push');
     //$header.toggleClass('push');
     $mobileOverlay.toggleClass('hidden');
@@ -44,6 +37,7 @@ $(document).ready(function () {
     $body.toggleClass('noflow');
     isMenuVisible = !isMenuVisible;
   }
+
 
   $submenuToggle.on('click', (e) => {
     let thisMenu = $(e.target).parent();

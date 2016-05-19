@@ -678,6 +678,7 @@ ul.submenu {
 
 .text-section img {
   width: 30vw;
+  max-width: 250px;
   box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
   margin: 2rem;
   float: right; }
@@ -686,10 +687,23 @@ ul.submenu {
   padding: 1rem;
   font-size: 2rem; }
 
+.text-section h2 {
+  padding: 1rem; }
+
 .text-section p {
   padding: 1rem;
   font-size: 1.3rem;
   line-height: 1.7; }
+
+.text-section a, .text-section a:visited, .text-section a:active {
+  color: #5D9CEC; }
+
+.text-section a:hover {
+  color: #2f80e7; }
+
+.text-section ul {
+  padding: 1rem;
+  list-style-type: none; }
 
 .text-section.important {
   background-color: rgba(216, 51, 74, 0.8);
@@ -713,7 +727,7 @@ table {
   padding: 2rem 1rem 1rem;
   color: rgba(60, 59, 61, 0.4); }
   .breadcrumbs a {
-    color: rgba(60, 59, 61, 0.4);
+    color: rgba(60, 59, 61, 0.4) !important;
     -webkit-transition: all 0.6s;
     -moz-transition: all 0.6s;
     transition: all 0.6s; }

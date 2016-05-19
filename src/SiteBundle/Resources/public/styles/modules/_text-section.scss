@@ -7,6 +7,7 @@
 
   img {
     width: 30vw;
+    max-width: 250px;
     box-shadow: 0 0 10px 4px rgba(0,0,0,0.1);
     margin :2rem;
     float: right;
@@ -17,12 +18,32 @@
     font-size: 2rem;
   }
 
+  h2 {
+    padding: 1rem;
+  }
+
   p {
     padding: 1rem;
     font-size: 1.3rem;
     line-height: 1.7;
   }
+
+  a, a:visited, a:active {
+    color: $blue-jeans;
+  }
+
+  a:hover {
+    color: darken($blue-jeans, 10);
+  }
+
+  ul {
+    padding: 1rem;
+    list-style-type: none;
+  }
 }
+
+
+
 
 .text-section.important {
   background-color: rgba($ruby, 0.8);
@@ -54,7 +75,7 @@ table {
   color: rgba($coal, 0.4);
 
   a {
-    color: rgba($coal, 0.4);
+    color: rgba($coal, 0.4) !important;
     @include transition(all 0.6s);
     &:hover { color: rgba($coal, 0.8); }
   }

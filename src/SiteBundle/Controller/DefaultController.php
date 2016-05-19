@@ -40,5 +40,12 @@ class DefaultController extends Controller
     public function tobiasReimannAction() {
         return $this->render('@Site/Default/Anwälte/tobias-reimann.html.twig');
     }
+    public function manifestAction() {
+        return $this->render('@Site/Default/manifest.html.twig');
+    }
+
+    public function rechtsgebieteAction() {
+        return $this->render('@Site/Default/Rechtsgebiete/rechtsgebiete.html.twig');
+    }
 
 }

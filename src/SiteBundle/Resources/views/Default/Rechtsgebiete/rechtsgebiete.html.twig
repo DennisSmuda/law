@@ -1,0 +1,27 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+{% block body %}
+
+  <main>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <span class="breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('rechtsgebiete') }}">Anwälte</a></span>
+        <h1>Tätigkeitsschwerpunkte</h1>
+        <img src="{{ asset('bundles/site/images/bgh.jpg') }}" alt="">
+        <p>Wie jede gute Rechtsanwaltskanzlei, können auch wir nicht von uns behaupten, in allen Rechtsgebieten "die Besten" zu sein. Allerdings können Sie davon ausgehen, dass wir in unseren Tätigkeitsschwerpunkten absolut kompetent und fachlich immer auf dem neuesten Stand sind. Wir möchten Ihnen daher unsere Tätigkeitsschwerpunkte auf den folgenden Seiten kurz vorstellen:</p>
+
+
+        <ul>
+          <li><a href="">Bußgeldsachen</a></li>
+        </ul>
+
+      </div>
+    </section>
+
+
+
+  </main>
+
+{% endblock %}

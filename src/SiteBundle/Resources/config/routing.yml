@@ -33,3 +33,11 @@ evaKarrmann:
 tobiasReimann:
     path:     /tobias-reimann
     defaults: { _controller: SiteBundle:Default:tobiasReimann }
+
+manifest:
+    path:     /manifest
+    defaults: { _controller: SiteBundle:Default:manifest }
+
+rechtsgebiete:
+    path:     /rechtsgebiete
+    defaults: { _controller: SiteBundle:Default:rechtsgebiete }
