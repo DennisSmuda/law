@@ -34,4 +34,11 @@ class DefaultController extends Controller
     public function lutzEiselAction() {
         return $this->render('@Site/Default/Anwälte/lutz-eisel.html.twig');
     }
+    public function evaKarrmannAction() {
+        return $this->render('@Site/Default/Anwälte/eva-karrmann.html.twig');
+    }
+    public function tobiasReimannAction() {
+        return $this->render('@Site/Default/Anwälte/tobias-reimann.html.twig');
+    }
+
 }

@@ -25,3 +25,11 @@ anwaelte:
 lutzEisel:
     path:     /lutz-eisel
     defaults: { _controller: SiteBundle:Default:lutzEisel }
+
+evaKarrmann:
+    path:     /eva-karrmann
+    defaults: { _controller: SiteBundle:Default:evaKarrmann }
+
+tobiasReimann:
+    path:     /tobias-reimann
+    defaults: { _controller: SiteBundle:Default:tobiasReimann }
