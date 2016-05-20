@@ -94,6 +94,7 @@ header nav.mobile {
   z-index: 1000;
   position: absolute;
   width: $mobile-nav-width;
+  max-width: 50%;
   height: 100vh;
   top: 0;
   left: 0;
