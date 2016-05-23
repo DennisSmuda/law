@@ -47,5 +47,11 @@ class DefaultController extends Controller
     public function rechtsgebieteAction() {
         return $this->render('@Site/Default/Rechtsgebiete/rechtsgebiete.html.twig');
     }
+    public function strafrechtAction() {
+        return $this->render('@Site/Default/Rechtsgebiete/strafrecht.html.twig');
+    }
+    public function strafrechtUebersichtAction() {
+        return $this->render('@Site/Default/Rechtsgebiete/uebersicht-strafgesetze.html.twig');
+    }
 
 }

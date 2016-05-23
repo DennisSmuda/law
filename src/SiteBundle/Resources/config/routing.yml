@@ -41,3 +41,11 @@ manifest:
 rechtsgebiete:
     path:     /rechtsgebiete
     defaults: { _controller: SiteBundle:Default:rechtsgebiete }
+
+strafrecht:
+    path:     /strafrecht
+    defaults: { _controller: SiteBundle:Default:strafrecht }
+
+strafrecht-uebersicht:
+    path:     /uebersicht-strafrecht
+    defaults: { _controller: SiteBundle:Default:strafrechtUebersicht }

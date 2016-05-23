@@ -1,0 +1,97 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+{% block body %}
+
+  <main>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <span class="breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('rechtsgebiete') }}">Rechtsgebiete</a> > <a
+                  href="{{ path('strafrecht-uebersicht') }}">Übersicht Strafgesetze</a></span>
+        <h1>Ein kleines Lexikon</h1>
+        <img src="{{ asset('bundles/site/images/bgh.jpg') }}" alt="">
+        <p>Das Strafrecht ist sicherlich eines der schillernsten Rechtsgebiete, große Strafverfahren bestimmen oft über Wochen die Nachrichten. Über das Recht selbst ist dabei häufig doch nur wenig bekannt. Wir möchten Ihnen daher im Folgenden einen kleinen Überblick über einzelne Strafvorschriften geben.</p>
+
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Allgmeiner Teil des Strafgesetzbuches</h1>
+        <p>Im allgemeinen Teils des StGB sind die allgemeinen Voraussetzungen für eine Strafbarkeit geregelt. Einige dieser Voraussetzungen haben wir für Sie erläutert.</p>
+
+        <div class="tabs">
+          <ul class="tab-links">
+            <li class="active"><a href="#tab1">Antragsdelikte</a></li>
+            <li><a href="#tab2">Fahrlässigkeit</a></li>
+            <li><a href="#tab3">Notwehr</a></li>
+            <li><a href="#tab4">Die Strafe</a></li>
+            <li><a href="#tab5">Unterlassen</a></li>
+            <li><a href="#tab6">Verbrechen und Vergehen</a></li>
+            <li><a href="#tab7">Versuch </a></li>
+            <li><a href="#tab8">Vorsatz </a></li>
+            <li><a href="#tab9">Sache </a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="tab1" class="tab active">
+              <p>Antragsdelikte</p>
+              <p>Im Strafverfahren gilt der Grundsatz, dass Polizei und Staatsanwaltschaft ermitteln müssen, wenn Sie Kenntnis vom möglichen Vorliegen einer Straftat haben. Diese Verpflichtung ist die Kehrseite aus dem Gewaltmonopol des Staates.</p>
+              <p>Im Bereich kleinerer Vergehen, die grundsätzlich die Öffentlichkeit nicht berühren, hat der Gesetzgeber es aber in das Ermessen des Verletzten gestellt, ob ein Strafverfahren aufgenommen werden soll oder nicht.</p>
+              <p>Bei den absoluten Antragsdelikten (z. B. Hausfriedensbruch) muss der "Verletzte" innerhalb von drei Monaten nach der Tat einen Strafantrag stellen, sonst wird die Tat nicht verfolgt.</p>
+              <p>Bei den so genannten relativen Antragsdelikten (z. B. Körperverletzung, § 223 StGB) kann der Staat das besondere öffentliche Interesse an der Strafverfolgung bejahen, und die Tat auch dann verfolgen, wenn der "Verletzte" dies eigentlich nicht will (§ 230 StGB).</p>
+              <p>Ein Strafantrag kann bis zum Abschluss des Verfahrens jederzeit zurückgenommen werden. Bei absoluten Antragsdelikten hat dies das Entstehen eines Verfahrenshindernisses zur Folge und das Verfahren ist einzustellen.</p>
+            </div>
+
+            <div id="tab2" class="tab">
+              <p>Fahrlässigkeit</p>
+              <p>Fahrlässig handelt, wer die im Verkehr erforderliche Sorgfalt außer Acht lässt. Die fahrlässige Verwirklichung eines Straftatbestandes ist nur dann strafbar, wenn das Gesetz dies ausdrücklich anordnet (z. B. fahrlässige Tötung).</p>
+            </div>
+
+            <div id="tab3" class="tab">
+              <p>Notwehr</p>
+              <p>Notwehr ist diejenige gebotene Verteidigung, die erforderlich ist um einen gegenwärtigen rechtswidrigen Angriff von sich oder einem anderen abzuwenden. (§ 32 StGB)</p>
+            </div>
+
+            <div id="tab4" class="tab">
+              <p>Die Strafe</p>
+              <p>Die Strafe ist Ausdruck der Schuld des Täters. Nicht der Täter als Person wird bestraft, sondern die begangene Tat.</p>
+              <p>Das moderne Strafrecht verfolgt dabei mit der Bestrafung nicht mehr das noch bis ins Mittelalter vorherrschende Prinzip der Vergeltung, sondern das Prinzip der Verhinderung weiterer Straftaten. Der einzelne Täter, aber auch die Allgemeinheit, sollen davon abgehalten werden zukünftig Straftaten zu begehen.</p>
+            </div>
+
+            <div id="tab5" class="tab">
+              <p>Unterlassen</p>
+              <p>Strafbar ist immer nur eine Handlung, also ein aktives, zielgerichtetes Tun. Das Unterlassen kann rechtlich aber einer aktiven Handlung gleichgestellt sein, nämlich dann, wenn man zur aktiven Handlung verpflichtet gewesen wäre.</p>
+            </div>
+
+            <div id="tab6" class="tab">
+              <p>Verbrechen und Vergehen</p>
+              <p>Vebrechen sind rechtswidrige Taten die im Mindestmaß mit einem Jahr Freiheitsstrafe bestraft werden. Ein Vergehen wird im Mindestmaß mit Geldstrafe bestraft.</p>
+            </div>
+
+            <div id="tab7" class="tab">
+              <p>Versuch</p>
+              <p>Eine Straftat versucht, wer nach seiner Vorstellung von der Tat unmitelbar zu ihrer Verwirklichung ansetzt. Der Versuch einer Tat ist strafbar, wenn das Gesetz dies anordnet oder die Tat ein Verbrechen darstellt.</p>
+            </div>
+
+            <div id="tab8" class="tab">
+              <p>Vorsatz</p>
+              <p>Vorsatz ist das Wissen und Wollen um die Verwirklichung eines gesetzlichen Tatbestandes. Strafbar ist immer nur vorsätzliches Handeln, wenn das Gesetz Fahrlässigkeit nicht ausdrücklich unter Strafe stellt.</p>
+            </div>
+
+            <div id="tab9" class="tab">
+              <p>Sache</p>
+              <p>Der Sachbegriff im Strafrecht kann vom Sachbegriff des Zivilrechts (§ 90 BGB) abweichen. Im Strafrecht umfasst er körperliche Gegenstände, aber auch Tiere (anders im BGB, § 90a). Wer einem Wirbeltier grundlos Schmerzen bereitet, begeht neben einer Tierquälerei (§ 17 TierschG) auch eine Sachbeschädigung, wenn das Tier durch die Handlung Schaden nimmt.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+  </main>
+
+{% endblock %}

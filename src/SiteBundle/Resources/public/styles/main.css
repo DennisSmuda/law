@@ -67,7 +67,7 @@ body {
   -moz-transition: all 0.6s;
   transition: all 0.6s; }
   .site-wrapper.push {
-    transform: translateX(400px); }
+    transform: translateX(300px); }
 
 /**=======================**/
 /** Components **========**/
@@ -418,7 +418,7 @@ header {
       justify-content: space-between;
       -ms-flex-pack: justify; } }
   header.push {
-    transform: translateX(400px); }
+    transform: translateX(300px); }
 
 /******************/
 /** Desktop ******/
@@ -472,7 +472,8 @@ header nav.mobile {
   background-color: #465058;
   z-index: 1000;
   position: absolute;
-  width: 400px;
+  width: 300px;
+  max-width: 50%;
   height: 100vh;
   top: 0;
   left: 0;
@@ -518,7 +519,7 @@ header nav.mobile {
       header nav.mobile > ul > li li {
         padding: 0.5rem; }
   header nav.mobile.hidden {
-    left: -400px; }
+    left: -300px; }
 
 header nav.mobile > ul > li {
   border-bottom: 1px solid rgba(245, 247, 250, 0.3); }
@@ -578,7 +579,7 @@ header .hamburger {
   width: 100vw;
   height: 100vh;
   top: 0;
-  left: 400px;
+  left: 300px;
   right: 0;
   bottom: 0;
   background-color: rgba(60, 59, 61, 0.3);
@@ -615,6 +616,51 @@ ul.submenu {
     z-index: -111;
     position: relative;
     opacity: 0; }
+
+/*----- Tabs -----*/
+.tabs {
+  width: 100%;
+  display: inline-block; }
+
+/*----- Tab Links -----*/
+/* Clearfix */
+.tab-links:after {
+  display: block;
+  clear: both;
+  content: ''; }
+
+.tab-links li {
+  margin: 0px 5px;
+  float: left;
+  list-style: none; }
+
+.tab-links a {
+  padding: 9px 15px;
+  display: inline-block;
+  border-radius: 3px 3px 0px 0px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #4c4c4c;
+  transition: all linear 0.15s; }
+
+.tab-links a:hover {
+  text-decoration: none; }
+
+li.active a, li.active a:hover {
+  background: #fff;
+  color: #4c4c4c; }
+
+/*----- Content of Tabs -----*/
+.tab-content {
+  padding: 15px;
+  border-radius: 3px;
+  background: #f5f5f5; }
+
+.tab {
+  display: none; }
+
+.tab.active {
+  display: block; }
 
 .bg-image {
   height: 100vh;
@@ -733,6 +779,36 @@ table {
     transition: all 0.6s; }
     .breadcrumbs a:hover {
       color: rgba(60, 59, 61, 0.8); }
+
+.text-section .tabs .tab-links {
+  background-color: #f0f0f0;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center; }
+
+.text-section .tabs .tab-content {
+  background-color: #f9f9f9; }
 
 section.map {
   height: 400px; }

@@ -1,0 +1,46 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+{% block body %}
+
+  <main>
+
+    <div class="bg-image" style="background-image: url({{ asset('bundles/site/images/strafrecht.jpg') }})">
+      <div class="image-overlay">
+        <h1>Strafrecht</h1>
+      </div>
+    </div>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <span class="breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('rechtsgebiete') }}">Rechtsgebiete</a> > <a
+                  href="{{ path('strafrecht') }}">Strafrecht</a></span>
+
+        <h1>Gefängnisse sind ein schöner Anblick...</h1>
+        <p>solange man sie vor Augen hat, weiß man, dass man nicht drinsitzt.</p>
+        <p><a href="https://de.wikipedia.org/wiki/Fran%C3%A7ois_Villon">Francoise Villon </a>(1431-1465, franz. Dichter)</p>
+
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Strafverteidigung</h1>
+        <p>Der Kontakt zum Strafverteidiger ist häufig mit vielen Problemen belastet. Man fühlt sich zu unrecht beschuldigt, wird zu unrecht beschuldigt, oder glaubt, dass schon alles gut gehen werde. Manchmal scheut man aber auch einfach nur das Kostenrisiko.Dabei ist es gerade dann, wenn man sich - aus welchen Gründen auch immer - dem Verdacht einer Straftat ausgesetzt sieht, unumgänglich sich der professionellen Hilfe eines Strafverteidigers zu bedienen.</p>
+        <p>Strafverteidigung ist dabei gerade auch eine Frage des Vertrauens in die Fähigkeiten, die Kenntnisse und die Person des Verteidigers, denn häufig ist der Verteidiger der Einzige, mit dem man (noch) über die Sache sprechen kann (oder sollte).</p>
+        <p>Herr <a href="{{ path('lutzEisel') }}">Rechtsanwalt Eisel</a> und Herr <a href="{{ path('tobiasReimann') }}">Rechtsanwalt Reimann</a> haben sich über viele Jahre im Bereich des Strafrechts spezialisiert, um den Ansprüchen moderner und effektiver Strafverteidigung gerecht zu werden und damit Sie sich vertauensvoll an uns wenden können.</p>
+        <p>Wenn Sie nicht sicher sind, ob Sie oder wann Sie einen Verteidiger hinzuziehen möchten, bedenken Sie, dass die Entscheidungen über den Ausgang des Verfahrens immmer schon mit den ersten Ermittlungen fallen. Zögern Sie daher nicht, unsere Hilfe in Anspruch zu nehmen, wenn gegen Sie ermittelt wird. Nutzen Sie die Möglichkeit, uns in einem frühen ersten Gespräch kennen zu lernen. Je früher Sie einen Verteidiger beauftragen, umso effektiver kann Ihre Verteidigung gestaltet werden. Häufig ist es dann sogar möglich, dass Verfahren durch Einstellungen zu beenden, ohne dass es einer Hauptverhandlung vor dem Gericht bedarf.</p>
+
+        <ul>
+          <li><a href="{{ path('strafrecht-uebersicht') }}">Eine kurze Übersicht über die Strafgesetze</a></li>
+          <li><a href="">Das Strafverfahren</a></li>
+          <li><a href="">Pflichtverteidigung</a></li>
+        </ul>
+
+      </div>
+    </section>
+
+
+  </main>
+
+{% endblock %}

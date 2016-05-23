@@ -80,3 +80,20 @@ table {
     &:hover { color: rgba($coal, 0.8); }
   }
 }
+
+
+// Tab Code
+.text-section .tabs {
+
+  .tab-links {
+    background-color: #f0f0f0;
+    -js-display: flex;
+    @include display(flex);
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+  }
+
+  .tab-content {
+    background-color: #f9f9f9;
+  }
+}
