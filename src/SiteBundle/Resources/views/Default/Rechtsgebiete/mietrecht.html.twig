@@ -1,0 +1,28 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+{% block body %}
+
+  <main>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <span class="breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('rechtsgebiete') }}">Rechtsgebiete</a> > <a
+                  href="{{ path('mietrecht') }}">Mietrecht</a></span>
+        <h1>Das Mietrecht</h1>
+        <img src="{{ asset('bundles/site/images/mietrecht.jpg') }}" alt="">
+        <p>In Deutschland sind rund 58% der "eigenen vier Wände", eigentlich gar nicht die "eigenen" vier Wände, sondern Mietwohnungen. Wenn nun aber der eigene Lebensmittelpunkt im Eigentum einer anderen Person steht, so kann hieraus ein besonderes Spannungsverhältnis erwachsen, das allen Beteiligten größte Anstrengungen aberverlangt.</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Unsere Leistungen</h1>
+        <p>In unserer Kanzlei können Sie sich mit Ihren Fragen an Frau <a href="{{ path('evaKarrmann') }}">Rechtsanwältin Karrmann</a> wenden. Sie verfügt über jahrelange Erfahrungen auf dem Gebiet des Mietrechts und wird Sie kompetent und zielorientiert beraten und erforderlichen Falls auch gerichtlich vertreten.</p>
+        <p>Wir beraten und vetreten Sie in allen Fragen rund um das Mietverhältnis, angefangen bei Fragen zum Zustand der Mietsache bis zur Frage der Schönheitsreparaturen und Renovierungspflichten.</p>
+      </div>
+    </section>
+
+  </main>
+
+{% endblock %}

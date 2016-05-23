@@ -53,5 +53,41 @@ class DefaultController extends Controller
     public function strafrechtUebersichtAction() {
         return $this->render('@Site/Default/Rechtsgebiete/uebersicht-strafgesetze.html.twig');
     }
+    public function strafverfahrenAction() {
+        return $this->render('@Site/Default/Rechtsgebiete/strafverfahren.html.twig');
+    }
+    public function pflichtverteidigungAction() {
+        return $this->render('@Site/Default/Rechtsgebiete/pflichtverteidigung.html.twig');
+    }
+    public function bussgeldAction() {
+        return $this->render('@Site/Default/Rechtsgebiete/bussgeldsachen.html.twig');
+    }
+    public function polizeiAction() {
+        return $this->render('@Site/Default/Rechtsgebiete/polizei-ordnungsrecht.html.twig');
+    }
+    public function psychiatrieAction() {
+        return $this->render('@Site/Default/Rechtsgebiete/psychiatrie.html.twig');
+    }
+    public function familienrechtAction() {
+        return $this->render('@Site/Default/Rechtsgebiete/familienrecht.html.twig');
+    }
+    public function verkehrsrechtAction() {
+        return $this->render('@Site/Default/Rechtsgebiete/verkehrsrecht.html.twig');
+    }
+    public function zivilrechtAction() {
+        return $this->render('@Site/Default/Rechtsgebiete/zivilrecht.html.twig');
+    }
+    public function vertragsrechtAction() {
+        return $this->render('@Site/Default/Rechtsgebiete/vertragsrecht.html.twig');
+    }
+    public function arbeitsrechtAction() {
+        return $this->render('@Site/Default/Rechtsgebiete/arbeitsrecht.html.twig');
+    }
+    public function erbrechtAction() {
+        return $this->render('@Site/Default/Rechtsgebiete/erbrecht.html.twig');
+    }
+    public function mietrechtAction() {
+        return $this->render('@Site/Default/Rechtsgebiete/mietrecht.html.twig');
+    }
 
 }

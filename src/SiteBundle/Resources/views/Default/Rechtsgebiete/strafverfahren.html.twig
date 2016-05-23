@@ -1,0 +1,86 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+{% block body %}
+
+  <main>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <span class="breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('rechtsgebiete') }}">Rechtsgebiete</a> > <a
+                  href="{{ path('strafverfahren') }}">Das Strafverfahren</a></span>
+        <h1>Das Strafverfahren</h1>
+        <img src="{{ asset('bundles/site/images/strafgesetzbuch.jpg') }}" alt="">
+        <p>Im Rechtsstaat obliegt die Strafverfolgung - und mit ihr die Wahrung der Rechte des Einzelnen - dem Staat. Durch ein förmlich geregeltes Verfahren soll über die Schuld des Beschuldigten und die hierfür angemessene Strafe entschieden werden.</p>
+        <p>Das Strafverfahren gliedert sich in vier Abschnitte: Ermittlungs- Zwischen- Haupt- und Vollstreckungsverfahren.</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Das Ermittlungsverfahren</h1>
+        <p>Das Ermittlungsverfahren beginnt mit dem so genannten Anfangsverdacht, also der Kenntnis der Strafverfolgungsbehörden von einer möglicherweise begangenen Straftat. Die Staatsanwaltschaft soll den Anfangsverdacht im Laufe des Ermittlungsverfahrens entweder erhärten oder entkräften. Hierzu bedient sie sich unter Mithilfe der Polizei, aber auch anderer Behörden, einer Reihe verschiedener Ermittlungsmaßnahmen, so zum Beispiel der Zeugenbefragung, der Beschuldigtenvernehmung, dem so genannten Lauschangriff, der Durchsuchung oder der Sicherstellung von Beweismitteln.</p>
+        <p>Da (beinahe) jede Ermittlungsmaßnahme in die (Grund-)Rechte der Betroffenen eingreift, stehen viele Maßnahmen unter Vorbehalten und den Betroffenen steht die Möglichkeit der rechtlichen Überprüfung der jeweiligen Maßnahme offen. Die rechtliche Überprüfung mancher Ermittlungsmaßnahmen kann jedoch häufig erst nachträglich geschehen, wenn die Maßnahme heimlich und ohne Wissen des Betroffenen durchgeführt wurde.</p>
+        <p>Bestätigt sich der Anfangsverdacht am Ende der Ermittlungen nicht, so wird das Verfahren von der Staatsanwaltschaft eingestellt.</p>
+        <p>Hat sich der Anfangsverdacht zu einem hinreichenden Tatverdacht erhärtet, so erhebt die Staatsanwaltschaft nach dem Abschluss der Ermittlungen die Klage und gibt das Verfahren an das zuständige Gericht ab.</p>
+        <p>Der Verlauf des Ermittlungsverfahrens ist somit für das gesamte weitere Verfahren prägend. Die Mitwirkung eines Verteidigers ist gerade in diesem frühen Verfahrensstadium von besonderer Wichtigkeit.</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Das Zwischenverfahren</h1>
+        <p>Mit der Erhebung der öffentlichen Klage wird das Zwischenverfahren eröffnet. Das Ermittlungsergebnis wird nun vom Gericht überprüft.</p>
+        <p>Kommt der Richter zu dem Ergebnis, dass kein hinreichender Tatverdacht vorliegt oder die Anklage an einem Mangel leidet, so lehnt er die Eröffnung des Hauptverfahrens ab.</p>
+        <p>Ist das Gericht der Überzeugung, ein hinreichender Tatverdacht sei gegeben, wird das Hauptverfahren eröffnet.</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Das Hauptverfahren</h1>
+        <p>Kernstück des Hauptverfahrens ist die Durchführung der Hauptverhandlung. Aus dem Inbegriff der Hauptverhandllung soll das Gericht seine Überzeugung von der Schuld des Angeklagten gewinnen und die hierfür angemessene Strafe aussprechen. Daher müssen dem Gericht in der Hauptverhandlung alle im Ermittlungsverfahren gewonnenen entscheidungsrelevanten Beweise dargelegt werden. Das heißt z.B. Zeugen müssen innerhalb der Hauptverhandlung erneut aussagen, Augenscheinsbeweise müssen durch den Richter in Augenschein genommen werden, Sachverständige müssen ihr Gutachten vorstellen und erläutern, usw. Die Hauptverhandlung ist dabei von einem besonderen Formalismus geprägt, der letztlich jedoch dem Schutz des Angeklagten dienen soll. Dies wird insbesondere im Rahmen der Frage nach den zulässigen Beweismitteln, der zulässigen Gewinnung der Beweismittel und der Geltendmachung der Beweisverwertungsverbote deutlich.</p>
+        <p>Die zu erkennende Strafe muss der Schuld des Angeklagten entsprechen. Als Strafen kennt das Gesetz dabei die Geldstrafe, die Freiheitsstrafe und die Nebenstrafe. Die Vermögensstrafe nach § 43a StGB wurde im Jahr 2002 vom Bundesverfasungsgericht für grundgesetzwidrig erklärt.</p>
+        <p>Freiheitsstrafen können als zeitige oder in wenigen Fällen als lebenslange Strafen ausgesprochen werden. Geldstrafen werden in Tagessätzen bestimmt, wobei die Anzahl der Tagessätze Ausdruck der Schuld ist, während sich die Tagessatzhöhe nach dem Einkommen richtet.</p>
+        <p>Als Nebenstrafe kennt das StGB das Fahrverbot.</p>
+        <p>Die Mitwirkung eines Verteidigers wird vom Gesetz nur in den Fällen der so genannten notwendigen Verteidigung (<a
+                  href="{{ path('pflichtverteidigung') }}">Pflichtverteidigung</a>) vorgeschrieben. In Verfahren vor dem Strafrichter können Angeklagte sich daher auch ohne den Beistand eines Anwaltes verteidigen. Allerdings hat jeder Beschuldigte das Recht, sich des Beistandes eines Verteidigers zu bedienen. Von diesem Recht sollten Sie gebrauch machen. Ihr Verteidiger bewahrt Sie vor Fallstricken, die unangenehme und unüberschaubare Konsequenzen für Sie haben können.</p>
+        <p>Das Hauptverfahren endet mit der Entscheidung des Gerichts. Diese kann in einem Freispruch, einer Verurteilung oder der Einstellung des Verfahrens liegen.</p>
+        <p>Im Falle der Verurteilung geht das Verfahren in die Strafvollstreckung über, sofen der Verurteilte keine Rechtsmittel einlegt.</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Rechtsmittel</h1>
+        <p>Gegen Uretile des Amtsgerichts sind als Rechtsmittel die Berufung und die Revision zulässig.</p>
+        <p>Die Berufung führt zu einer Überprüfung des Urteils in rechtlicher und tatsächlicher Hinsicht durch das Landgericht.</p>
+        <p>Die Revision führt nur zur Überprüfung in rechtlicher Hinsicht. Eine zweite Tatsacheninstanz gibt es nicht.</p>
+        <p>Revisionen gegen erstinstanzliche Urteile des Amtsgerichts finden vor dem Oberlandesgericht statt, Revisionen gegen erstinstanzliche Urteile des Landgerichts und des Oberlandesgerichts führen zu Verfahren vor dem Bundesgerichtshof.</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Strafvollstreckung</h1>
+        <p>Das Vollstreckungsverfahren unterliegt wieder der Staatsanwaltschaft als Vollstreckungsbehörde. Im Falle einer Geldstrafe erhält der Verurteilte eine gewisse Zeit nach dem Urteil die Aufforderung, den festgelegeten Betrag - häufig in Raten - an die Staatskasse zu zahlen. Im Falle der Verurteilung zu einer Freiheitsstrafe erhält der Verurteilte - soweit die Vollstreckung der Strafe nicht zur Bewährung ausgesetzt wurde - eine Ladung zum Strafantritt in einer bestimmten Justizvollzugsanstalt.</p>
+        <p>Auch in der Strafvollstreckung und im Strafvollzug können Sie einen Verteidiger beauftragen, der Ihnen bei der Wahrung Ihrer Rechte zur Seite steht und diese für Sie durchsetzt.</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Untersuchungshaft</h1>
+        <p>Eine besondere Problematik im Rahmen des Strafverfahrens stellt die Anordnung der Untersuchungshaft dar. Ist ein Beschuldigter einer Straftat dringend verdächtig und liegt ein Haftgrund vor, so kann der Beschuldigte auch schon vor seiner Verurteilung durch einen Richter inhaftiert werden.</p>
+        <p>Die Haft ist dabei jedoch keine Strafe, sondern sie soll der Sicherung des Verfarens dienen, etwa weil der Beschuldigte sich dem Verfahren durch Flucht entziehen oder Beweismitel vernichten könnte. Es ist dabei jedoch ein offenes Geheimnis, dass die Untersuchunghaft auch eingesetzt wird, um dem Beschuldigten bereits zu einem frühen Zeitpunkt unter dem Eindruck der Haftbedingungen ein Geständnis zu entlocken oder - häufig in Jugendstrafsachen - einen ersten Denkzettel zu verpassen.</p>
+        <p>Es darf nicht verkannt werden, dass die Untersuchungshaft die Inhaftierung eines unschuldigen Menschen bedeutet und darüber hinaus die Verteidigungsmöglichkeiten des Beschuldigten erheblich einschränkt. Im Falle der Anordnung der Untersuchunghaft sollte daher umgehend ein Verteidiger konsultiert werden, damit die Anordnung der Haft überprüft werden und der Beschuldigte so bald wie möglich wieder auf freien Fuß gesetzt werden kann.</p>
+        <p>Seit der Reform des Untersuchungshaftrechtes im Jahr 2010, liegt in den Fällen der Anordnung der Untersuchungshaft ein Fall der notwendigen Verteidigung (sog.
+          <a href="{{ path('pflichtverteidigung') }}">Pflichtverteidigung</a>) vor.</p>
+      </div>
+    </section>
+
+
+
+  </main>
+
+{% endblock %}

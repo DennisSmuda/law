@@ -1,0 +1,34 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+{% block body %}
+
+  <main>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <span class="breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('rechtsgebiete') }}">Rechtsgebiete</a> > <a
+                  href="{{ path('zivilrecht') }}">Zivilrecht</a></span>
+        <h1>Zivilrecht</h1>
+        <img src="{{ asset('bundles/site/images/zivilrecht.jpg') }}" alt="">
+        <p>Unter dem Begriff Zivilrecht - oder Bürgerliches Recht - versteht man die Rechts&shy;beziehungen einzelner Personen oder Personen&shy;gruppen, aber auch von Gesellschaften und Vereinen zueinander. Diese Rechtsbeziehungen können unmittelbar aus einem Gesetz bestehen (z. B. familienrechtliche Fürsorge) oder aber über Verträge begründet werden.</p>
+        <p>Das Bürgerliche Recht ist seit der großen Zivilrechtsreform 2002 wieder beinahe vollständig im Bürgerlichen Gesetzbuch geregelt. Das ursprünglich am 01.01.1900 in Kraft getretene Gesetz gilt als einer der am besten ausgearbeiteten Gesetzestexte. Nach 1945 wurde das BGB besonders im asiatischen Raum (Thailand, Japan, Süd-Korea) in großen Teilen übernommen.</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Unsere Tätigkeitsbereiche</h1>
+        <p>Nachfolgend dürfen wir Ihnen einige Rechtsgebiete aus dem Bürgerlichen Recht vorstellen, in denen unsere Tätigkeitsschwerpunkte liegen:</p>
+        <ul>
+          <li><a href="{{ path('vertragsrecht') }}">Vertragsrecht</a></li>
+          <li><a href="{{ path('arbeitsrecht') }}">Arbeitsrecht</a></li>
+          <li><a href="{{ path('erbrecht') }}">Erbrecht</a></li>
+          <li><a href="{{ path('mietrecht') }}">Mietrecht</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+{% endblock %}

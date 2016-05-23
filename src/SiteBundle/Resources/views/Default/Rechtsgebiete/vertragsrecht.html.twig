@@ -1,0 +1,28 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+{% block body %}
+
+  <main>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <span class="breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('rechtsgebiete') }}">Rechtsgebiete</a> > <a
+                  href="{{ path('vertragsrecht') }}">Vertragsrecht</a></span>
+        <h1>Vertragsrecht</h1>
+        <img src="{{ asset('bundles/site/images/zivilrecht.jpg') }}" alt="">
+        <p>In Deutschland besteht - bis auf wenige Ausnahmen - Vertragsfreiheit, das heißt jeder ist im Rahmen der geltenden Gesetze in seiner Entscheidung ob und welche Verträge er mit wem abschließt und wie diese Verträge ausehen sollen, frei. Diese Freiheit bedeutet teilweise aber auch Unsicherheit. Unsicherheit darüber, wie ein Vertrag gestaltet werden soll oder darf und Unsicherheit darüber, welche Verträge ohne größere Risiken eingegangenwerden können.</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Unsere Leistungen</h1>
+        <p>Das Vertragsrecht ist - neben weiteren allgemeinrechtlichen Fragen, wie der Stellvertretung, der Geschäftsfähigkeit, etc - daher ein großer Bestandteil der allgemein zivilrechtlichen, rechtsanwaltlichen Tätigkeit. Frau <a href="{{ path('evaKarrmann') }}">Rechtsanwältin Karrmann</a> berät Sie bei der Gestaltung von Verträgen, überprüft für Sie aber auch bestehende Verträge, bevor Sie diese eingehen.</p>
+        <p>Gerade im Bereich längerfristiger Bindungen ist es empfehlenswert, Verträge vor ihrem Abschluss von einem Fachmann, bzw. einer Fachfrau überprüfen zu lassen. Die finanziellen "Spätfolgen" einer fehlinterpretierten Verpflichtung können die Kosten einer vorbeugenden Beratung um das Vielfache überschreiten.</p>
+      </div>
+    </section>
+
+  </main>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+{% block body %}
+
+  <main>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <span class="breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('rechtsgebiete') }}">Rechtsgebiete</a> > <a
+                  href="{{ path('erbrecht') }}">Erbrecht</a></span>
+        <h1>Das Erbrecht</h1>
+        <img src="{{ asset('bundles/site/images/erbrecht.jpg') }}" alt="">
+        <p>Eigentlich ist die Erbfolge im deutschen Recht eindeutig geklärt. Der Erblasser braucht sich um seinen Nachlass nicht zu kümmern, es gibt eine bis ins Detail geregelte gesetzliche Erbfolge.</p>
+        <p>Dennoch ist das Erbrecht wohl eines der komplexeren Tätigkeitsgebiete für einen Rechtsanwalt. Wenn nämlich der Erbe das Erbe ausschlagen möchte, der Erblasser den Nachlass ausschließlich seiner Ehefrau zukommen lassen möchte, die Berechnung des Pflichtteilanspruches nicht stimmt oder sogar der Pflichtteil aberkannt werden soll, dann ist anwaltlicher Beistand in einem sehr persönlichen, intimen Lebensbereich aller beteiligten Personen erforderlich.</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Unsere Leistungen</h1>
+        <p>Herr <a href="{{ path('lutzEisel') }}">Rechtsanwalt Eisel</a> berät Sie in allen Fragen rund um das Erbrecht. Herr Eisel kann dabei auch auf seine langjährige Erfahrung als Notar zurückgreifen und so schon lange vor dem Erbfall dabei helfen, dass nach dem traurigen Abschied von einem Verwasndten oder einer sonst nahestehenden Person keine Unstimmigkeiten über den letzten Willen entstehen.</p>
+      </div>
+    </section>
+
+  </main>
+
+{% endblock %}

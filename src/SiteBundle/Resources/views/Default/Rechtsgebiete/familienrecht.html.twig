@@ -1,0 +1,34 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+{% block body %}
+
+  <main>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <span class="breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('rechtsgebiete') }}">Rechtsgebiete</a> > <a
+                  href="{{ path('familienrecht') }}">Familienrecht</a></span>
+        <h1>Familienrecht</h1>
+
+        <p>Das Familienrecht regelt die familiären Rechtsbeziehungen, wie</p>
+        <ul class="disc">
+          <li>Ehe</li>
+          <li>Partnerschaftssachen</li>
+          <li>Trennung</li>
+          <li>Scheidung</li>
+          <li>Sorgerecht</li>
+          <li>Unterhaltspflichten</li>
+          <li>Kindschafts- und Vaterschaftsangelegenheiten</li>
+        </ul>
+        <p>Das familienrechtliche Verfahren ist dabei einem besonderen Gerichtszweig, nämlich den Familiengerichten zugeordnet. Familiensachen sind damit grundsätzlich Angelegenheit der Amtsgerichte.</p>
+        <p>Im Jhre 2009 hat der Gesetzgeber mit dem Gsetz über das Verfahren in Familiensachen und Angelegenheiten der freiwilliogen Gerichtsbarkeit (kurz: FamFG) einige erhebliche Änderungen in das Verfahren eingeführt. So wurde das Institut der Verfahrenskostenhilfe geschaffen und die familiengerichtlichen Zuständigkeiten teils erheblich erweitert.</p>
+        <p>Familienrechtliche Fragen betreffen häufig sehr intime Lebensbereiche. Die Auswahl eines vertrauenswürdigen Anwalts, einer vertrauenswürdigen Anwältin ist daher gerade im Familienrecht wichtig. In unserem Büro können Sie sich vertrauensvoll an Frau
+          <a href="{{ path('evaKarrmann') }}">Rechtsanwältin Karrmann</a> wenden, die seit vielen Jahren im Familienrecht tätig ist.</p>
+      </div>
+    </section>
+
+
+  </main>
+
+{% endblock %}

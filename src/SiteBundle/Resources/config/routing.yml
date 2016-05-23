@@ -49,3 +49,51 @@ strafrecht:
 strafrecht-uebersicht:
     path:     /uebersicht-strafrecht
     defaults: { _controller: SiteBundle:Default:strafrechtUebersicht }
+
+strafverfahren:
+    path:     /strafverfahren
+    defaults: { _controller: SiteBundle:Default:strafverfahren }
+
+pflichtverteidigung:
+    path:     /pflichtverteidigung
+    defaults: { _controller: SiteBundle:Default:pflichtverteidigung }
+
+bussgeldsachen:
+    path:     /bussgeldsachen
+    defaults: { _controller: SiteBundle:Default:bussgeld }
+
+polizei-ordnungsrecht:
+    path:     /polizeirecht-ordnungsrecht
+    defaults: { _controller: SiteBundle:Default:polizei }
+
+psychiatrie:
+    path:     /psychiatrie
+    defaults: { _controller: SiteBundle:Default:psychiatrie }
+
+familienrecht:
+    path:     /familienrecht
+    defaults: { _controller: SiteBundle:Default:familienrecht }
+
+verkehrsrecht:
+    path:     /verkehrsrecht
+    defaults: { _controller: SiteBundle:Default:verkehrsrecht }
+
+zivilrecht:
+    path:     /zivilrecht
+    defaults: { _controller: SiteBundle:Default:zivilrecht }
+
+vertragsrecht:
+    path:     /vertragsrecht
+    defaults: { _controller: SiteBundle:Default:vertragsrecht }
+
+arbeitsrecht:
+    path:     /arbeitsrecht
+    defaults: { _controller: SiteBundle:Default:arbeitsrecht }
+
+erbrecht:
+    path:     /erbrecht
+    defaults: { _controller: SiteBundle:Default:erbrecht }
+
+mietrecht:
+    path:     /mietrecht
+    defaults: { _controller: SiteBundle:Default:mietrecht }

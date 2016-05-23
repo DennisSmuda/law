@@ -1,0 +1,37 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+{% block body %}
+
+  <main>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <span class="breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('rechtsgebiete') }}">Rechtsgebiete</a> > <a
+                  href="{{ path('bussgeldsachen') }}">Bußgeldsachen</a></span>
+        <h1>Recht der Gefahrenabwehr</h1>
+        <img src="{{ asset('bundles/site/images/polizei.jpg') }}" alt="">
+        <p>Das Polizei- und Ordnungsrecht dient der Abwehr von Gefahren für die öffentliche Sicherheit und Ordnung. Es soll Verstöße ahnden, aber auch Gefahren abwenden.</p>
+        <p>Polizei- und Ordnungsrecht ist Ländersache. Entsprechend gelten in den einzelnen Bundesländern teils unterschiedliche Regelungen.</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Die Ordnungsbehörden</h1>
+        <p>In Nordrhein-Westfalen handeln die Ordnungsbehörden (z.B. Oberbürgermeister oder Landräte mit ihren jeweilgen Ämtern - Ordnungsamt, Ausländeramt, etc. ) aufgrund der Befugnisse nach dem Ordnungsbehördengesetz und einiger weiterer Gesetzte (z.b. Immissionsschutzgesetz NRW, Landeswassergesetz). Die entsprechenden Behörden erlassen Bescheide mit denen dem Bürger bestimmte Handlungen erlaubt werden (zum Beispiel Nutzung der Fußgängerzone für Tische und Stühle eines Restaurants) oder verboten werden (z. B. Untersagung des Betriebes eines Biergartens nach 22.00 Uhr).</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Die Polizei</h1>
+        <p>Neben diesen Behörden kann - insbesondere im Bereich der Gefahrenabwehr - eine Zuständigkeit der Polizei nach dem Polizeigesetz NRW begründet sein. Sei es weil nur die Polizei über das nötige Personal oder die nötige Sachkenntnis verfügt, sei es weil die Polizei im Rahmen einer sonstigen Amtshilfe tätig werden muss oder das Polizeigesetz eine unmittelbare Zuständigkeit der Polizei vorsieht.</p>
+        <p>Die Polizei kann daher für ihre Handlungen häufig noch andere Rechtsgrundlagen heranziehen, als "nur" ihre strafprozessuale Aufgabe, der Staatsanwaltschaft bei der Aufklärung von Straftaten behilflich zu sein.</p>
+        <p>Der Rechtsschutz gegen polizeiliche Maßnahmen kann sich daher entsprechend schwierig gestalten. In unserem Büro berät Herr Rechtsanwalt Reimann Sie in allen Fragen zum Polizei- und Ordnungsrecht. Soweit erforderlich, vertritt Herr Reimann Ihr Anliegen auch vor dem zuständigen Verwaltungsgericht.</p>
+      </div>
+    </section>
+
+  </main>
+
+{% endblock %}

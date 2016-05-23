@@ -1,0 +1,49 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+{% block body %}
+
+  <main>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <span class="breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('rechtsgebiete') }}">Rechtsgebiete</a> > <a
+                  href="{{ path('verkehrsrecht') }}">Verkehrsrecht</a></span>
+        <h1>Verkehrsrecht</h1>
+        <h3>Ein Verkehrsunfall...</h3>
+        <p>...ist schnell passiert. Die Aufarbeitung der Ursachen und Abwicklung der Folgen können jedoch langwierig und schwierig sein. Wir beraten Sie gern über Ihre Ansprüche und Rechte und setzen diese auch durch, unabhängig davon, ob Sie durch einen Verkehrsunfall geschädigt wurden oder einen Verkehrsunfall verursacht haben sollen.</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Schadenersatz und Schmerzensgeld</h1>
+        <p>Wer Schadensersatz- und Schmerzensgeldansprüche aus einem Unfall geltend machen kann oder sich gegen solche Ansprüche zur Wehr setzen möchte, hat das Recht, sich zur Durchsetzung, bzw. Wahrung seiner Ansprüche einen Rechtsanwalt seiner Wahl zu suchen.</p>
+        <p>Frau <a href="{{ path('evaKarrmann') }}">Rechtsanwältin Karrmann</a> berät Sie im Hinblick auf Ihre Ansprüche und Rechte, wickelt die Regulierung mit den Versicherern ab und erstreitet Ihr Recht erforderlichen Falls auch vor Gericht.</p>
+        <p>Sollten Sie an einem Verkehrsunfall beteiligt sein, stellen wir Ihnen hier einige Fragebögen und Formulare bereit, die uns die Bearbeitung Ihrer Angelegenheit erleichtern und Ihnen so schneller zu Ihrem Recht verhelfen können. Zögern Sie nicht, uns zu kontaktieren.</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Straf- und Bußgeldverfahren</h1>
+        <p>Wer einen Verkehrsunfall verursacht haben soll oder sonst gegen die Verkehrsregeln verstoßen haben soll, muss mit der Einleitung eines Bußgeld- oder Strafverfahrens rechnen. Auch in diesen Fällen ist die frühzeitige Beaufragung eines Rechtsanwaltes sinnvoll, kann es doch gerade bei Verkehrsverstößen schnell auch um den Verlust des Führerscheins oder der Fahrerlaubnis gehen.</p>
+        <p>Herr <a href="{{ path('lutzEisel') }}">Rechtsanwalt Eisel</a> und Herr <a href="{{ path('tobiasReimann') }}">Rechtsanwalt Reimann</a> beraten Sie gerne und übernehmen auch Ihre Verteidigung im behördlichen, bzw. gerichtlichen Verfahren.</p>
+        <p>Zur besseren Vorbereitung Ihrer Angelegenheit dürfen wir Sie bitten, die hier zusammengstellten Unterlagen auszufüllen und zu Ihrem ersten Termin mitzubringen.</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Punkte und Bußgelder</h1>
+        <p>Für Vekehrsverstöße können Sie Verwarnungen, Bußgelder und Punkte im Verkehrszentralregister erhalten. Die Höhe des Bußgeldes und die Anzahl der Punkte hängen dabei vom Gewicht des Vertoßes ab.</p>
+        <p>Im sogenannten Bußgeldkatalog wurden die häufigsten Verkehrsverstöße zusammengefasst und - um eine Gleichbehandlung gleichgelagerter Fälle zu gewährleisten - bestimmte Sanktionen vorgeschrieben. Die Behörden können im Einzelfall zwar von den Vorgaben abweichen, regelmäßig werden aber die im Bußgeldkatalog vorgesehenen Bußgelder und Punkte verhängt.</p>
+        <p>Den aktuellen Bußgeldkatalog finden Sie <a
+                  href="http://www.kba.de/DE/Fahreignungs_Bewertungssystem/Punktekatalog/punktekatalog_node.html">hier</a>.</p>
+        <p>Einmal eingetragene Punkte bleiben nicht für immer im Verkehszentralregister eingetragen. Punkte, die aufgrund einer Ordnungswidrigkeit eingetragen wurden, werden nach 2 Jahren tilgungstreif und nach der Überliegefrist von einem weiteren Jahr gelöscht, wenn keine weiteren Eintragungen erfolgen. Wenn weitere Eintragungen vorgenommen werden, werden die Punkte allerdings addiert. Erst wenn Ordnungswidrigkeitenpunkte fünf Jahre lang eingetragen waren, tritt die endgültige Tilgungsreife ein, unabhängig von der Eintragung neuer Punkte. Punkte für Verkhersstraftaten unterliegen Tilgungsfristen bis zu 10 Jahren. Werden innerhalb der Fristen 18 Punkte erreicht, führt dies zum Verlust der Fahrerlaubnis.</p>
+      </div>
+    </section>
+
+  </main>
+
+{% endblock %}

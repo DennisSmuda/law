@@ -1,0 +1,28 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+{% block body %}
+
+  <main>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <span class="breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('rechtsgebiete') }}">Rechtsgebiete</a> > <a
+                  href="{{ path('arbeitsrecht') }}">Arbeitsrecht</a></span>
+        <h1>Arbeitsrecht</h1>
+        <img src="{{ asset('bundles/site/images/arbeitsrecht.jpg') }}" alt="">
+        <p>Das Arbeitsrecht hat sich im Laufe der letzten Jahrzehnte zu einem beinahe völlig eingeständigen Rechtsgebiet entwickelt. Wobei es sich nicht in einem einzigen Gesetzbuch widerspiegelt, sondern sich aus vielen unterschiedlichen Gesetzen, die ineinandergreifen, bildet. Neben dem BGB sind hier gleichsam das Bundesurlaubsgesetz, das Kündigungsschutzgesetz und das Betriebsverfassungsgesetz, um nur einige wenige zu nennen, zu berücksichtigen.</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Unsere Leistungen</h1>
+        <p>Frau <a href="{{ path('evaKarrmann') }}">Rechtsanwältin Karrmann</a> vertritt im arbeitsrechtlichen Bereich sowohl die Belange der Arbeitgeber, als auch die Belange der Arbeitnehmer. Ein Widerspruch ist dies sicherlich nicht, auch wenn man es auf den ersten Blick vermuten könnte. Gerade im Arbeitsrecht gesht es häufig um die wirtschaftliche Existenz aller Beteiligten, der Prozess ist dabei - wie kein anderer - von vorneherein auf eine gütliche Einigung der Parteien ausgelegt.</p>
+        <p>Wir vertreten Sie in Kündigungsschutzprozessen, beraten Sie aber auch bei der geplanten personellen Neustrukturierung Ihres Betriebs. Gerne überprüfen wir auch für Sie auch Ihre Arbeitsverträge oder Zeugnisse.</p>
+      </div>
+    </section>
+
+  </main>
+
+{% endblock %}

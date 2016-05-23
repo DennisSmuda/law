@@ -1,15 +1,15 @@
 .text-section {
 
   &__inner {
-    @include inner-middle(600px);
-    padding: 4rem 0;
+    @include inner-middle(800px);
+    padding: 2rem 0;
   }
 
   img {
     width: 30vw;
     max-width: 250px;
     box-shadow: 0 0 10px 4px rgba(0,0,0,0.1);
-    margin :2rem;
+    margin: 1.5rem;
     float: right;
   }
 
@@ -18,7 +18,7 @@
     font-size: 2rem;
   }
 
-  h2 {
+  h2, h3 {
     padding: 1rem;
   }
 
@@ -39,6 +39,12 @@
   ul {
     padding: 1rem;
     list-style-type: none;
+    font-size: 1.3rem;
+    line-height: 1.7;
+  }
+
+  ul.disc {
+    list-style-type: disc;
   }
 }
 
@@ -76,8 +82,7 @@ table {
 
   a {
     color: rgba($coal, 0.4) !important;
-    @include transition(all 0.6s);
-    &:hover { color: rgba($coal, 0.8); }
+    &:hover { color: rgba($coal, 0.8) !important; }
   }
 }
 

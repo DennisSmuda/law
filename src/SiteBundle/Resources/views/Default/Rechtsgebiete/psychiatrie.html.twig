@@ -1,0 +1,28 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+{% block body %}
+
+  <main>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <span class="breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('rechtsgebiete') }}">Rechtsgebiete</a> > <a
+                  href="{{ path('psychiatrie') }}">Psychiatrie</a></span>
+        <h1>Psychiatrie</h1>
+        <p>
+          Kein anderer Bereich der Medizin ist so umstritten wie die Psychiatrie. Psychiater verstehen sich oft nicht als Dienstleister für die Patienten, sondern als Handlanger für die Interessen der Angehörigen, der Nachbarn und der Polizei.
+        </p>
+        <p>Als Rechtsanwälte können wir nicht beurteilen, ob eine seelische Krise eine Erkrankung ist. Wir können aber dann helfen, wenn aus der Betreuung eine Entmündigung wird und aus der Behandlung eine Zwangsunterbringung.</p>
+        <p>Im Bereich der forensischen Psychiatrie ist ein Verteidiger unverzichtbar.
+          Bei PsychKG-Unterbringungen ist ein Rechtsanwalt oft hilfreich; es ist aber häufig schon jemand beigeordnet, so dass sich ein Kostenproblem ergibt: denn selbst wenn man erreicht, dass die Unterbringung aufgehoben wird, werden die Anwaltskosten für die erfolgreiche Beschwerde nicht erstattet.</p>
+
+        <p>In Betreuungsverfahren kommt es in vielen Fällen zum einen darauf an, ob eine Vollmacht vorrangig ist (z.B. Vorsorgevollmacht oder detaillierte Regelungen in einer Patientenverfügung), und zum anderen darauf, ob ein Betreuer kategorisch abgelehnt wird. Auch hier ist die Hilfe eines Rechtsanwalts oft sinnvoll, wobei aber häufig keine Prozesskostenhilfe bewilligt wird.
+        </p>
+      </div>
+    </section>
+
+
+  </main>
+
+{% endblock %}
