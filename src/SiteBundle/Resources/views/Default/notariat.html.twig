@@ -1,0 +1,30 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+{% block body %}
+
+  <main>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <span class="breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('rechtsgebiete') }}">Rechtsgebiete</a> > <a
+                  href="{{ path('notar') }}">Notariat</a></span>
+        <h1>Der Notar</h1>
+        <img src="{{ asset('bundles/site/images/notariat.jpg') }}" alt="">
+        <p>Die Ausübung des Notariats ist nach deutschem Recht die Ausübung eines öffentlichen Amtes. Die Ausübung obliegt - mit Ausnahme des badischen Amtsnotars und des württembergischnen Bezirksnotariats - dennoch dem freieruflich tätigen "Volljuristen", die genauere Ausgestaltung variiert dabei von bundesland zu bundesland.</p>
+        <p>In Nordrhein-Westfalen gibt es auf Grund der früheren zeitweisen Besetzung durch Napoleon sowohl den sogenannten "Nur-Notar" als auch den "Anwalts-Notar", der neben dem Notariat auch als Anwalt tätig sein darf.</p>
+        <p>Der Notar muss stets neutral sein und alle Beteiligten eines zu beurkundenden Rechtsgeschäftes gleichermaßen objektiv beraten. Die anwaltliche Tätigkeit ist daher von der Tätigkeit als Notar strikt getrennt zu halten. In einer Sache, in der schon einmal eine anwaltliche Tätigkeit ausgeübt wurde, ist die Tätigkeit als Notar ausgeschlossen.</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Unsere Leistungen</h1>
+        <p>Der Tätigkeitsbereich des Notars ist breit gestreut. Unter anderem beurkundet er Rechtsgeschäfte, also Verträge, soweit dies von den Parteien gewünscht oder vom Gesetz vorgeschrieben wird (zum Beispiel bei Grundstückskaufverträgen), ist Tätig bei der Gründung von Gesellschaften und Vereinen, beglaubigt Urkunden und Unterschriften.</p>
+        <p>Herr <a href="{{ path('lutzEisel') }}">Rechtsanwalt und Notar Eisel</a> ist seit 1986 als Notar in Bochum tätig. Für Ihre notariellen Angelegenheiten vereinbart er gerne - auch kurzfristig - einen Termin mit Ihnen.</p>
+      </div>
+    </section>
+
+  </main>
+
+{% endblock %}

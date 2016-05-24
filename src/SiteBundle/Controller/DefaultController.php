@@ -89,5 +89,14 @@ class DefaultController extends Controller
     public function mietrechtAction() {
         return $this->render('@Site/Default/Rechtsgebiete/mietrecht.html.twig');
     }
+    public function notarAction() {
+        return $this->render('@Site/Default/notariat.html.twig');
+    }
+    public function aktuellesAction() {
+        return $this->render('@Site/Default/Aktuelles/aktuelles.html.twig');
+    }
+    public function rechtsprechungAction() {
+        return $this->render('@Site/Default/Aktuelles/rechtsprechung.html.twig');
+    }
 
 }

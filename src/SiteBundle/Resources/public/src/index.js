@@ -65,4 +65,30 @@ $(document).ready(function () {
     e.preventDefault();
   });
 
+  // RSS Feed - only fires when there is a rechtsprechung list on the page
+  let feedList = $('ul.rechtsprechung');
+
+  if (feedList.length > 0) {
+    let FEED_URL = "http://juris.bundesgerichtshof.de/rechtsprechung/bgh/feed.xml";
+
+    $.ajax({
+      url      : document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(FEED_URL),
+      dataType : 'json',
+      success  : function (data) {
+        if (data.responseData.feed && data.responseData.feed.entries) {
+          $.each(data.responseData.feed.entries, function (i, e) {
+            console.log(e);
+            console.log(i);
+            console.log(feedList.eq(0).children().eq(i));
+
+            feedList.eq(0).children().eq(i).html(
+              `<a href="${e.link}">${e.title}</a>
+              <br>
+              ${e.contentSnippet}`
+            );
+          });
+        }
+      }
+    });
+  }
 });

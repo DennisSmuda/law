@@ -1,0 +1,39 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+{% block body %}
+
+  <main>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <span class="breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('aktuelles') }}">Aktuelles</a></span>
+        <h1>Neuigkeiten aus der Kanzlei</h1>
+        <p>Auf diesen Seiten möchten wir Ihnen in regelmäßigen Abständen Neuigkeiten rund um die Kanzlei Eisel & Karrmann präsentieren.</p>
+        <p>Hier werden Sie ebenso Ankündigungen von Veranstaltungen wie von uns erstrittene Urteile und Gerichtsentscheidungen wiederfinden.</p>
+        <p>Auch über besonders wichtige Rechtsprechung in unseren Tätigkeitsschwerpunkten werden wir Sie hier unterrichten.</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Kanzleinews</h1>
+        <p>Herr Rechtsanwalt Eisel und auch Herr Rechtsanwalt Reimann verteidigen jeweils auch mit großem Engagement im Bereich des Maßregelvollzuges. Unter dem 16.05.2013 konnte Herr Rechtsanwalt Reimann eine Entscheidung des Bundesverfassungsgrichts erwirken, mit der die grundlegende Entscheidung zur Anwendung des Verhältnismäßigkeitsgrundsatzes im Maßregelvollzug, die Herr RA Eisel 1985 erstreiten konnte, aktualisiert und konkretisert wird.</p>
+        <p>Wir nehmen diese Entscheidung und die derzeitigen politischen Überlegungen zum Anlass, das Augenmerk wieder verstärkt auf eine Änderung der gesetzlichen Voraussetzungen für die Anordnung der Unterbringung in einem psychiatrischen Krankenhaus nach § 63 StGB zu richten. Die Überlegungen hierzu haben wir auf einer <a href="http://www.manifest-reduzierung-forensik.de/">eigenen Internetseite</a> zusammngefasst.</p>
+        <p>Das Manifest zur Reduzierung des Aufenthaltes in der Forensik können Sie selbstverständlich aber auch <a href="{{ path('manifest') }}">hier</a> nachlesen.</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Rechtsprechung und Veranstaltungen</h1>
+        <ul class="rechtsprechung">
+          <li><a href="{{ path('rechtsprechung') }}">Rechtsprechung</a></li>
+          <li><a href="#">Veranstaltungen</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+{% endblock %}

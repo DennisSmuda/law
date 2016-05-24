@@ -115,6 +115,29 @@
 	    $(this).parent('li').addClass('active').siblings().removeClass('active');
 	    e.preventDefault();
 	  });
+	
+	  // RSS Feed - only fires when there is a rechtsprechung list on the page
+	  var feedList = $('ul.rechtsprechung');
+	
+	  if (feedList.length > 0) {
+	    var FEED_URL = "http://juris.bundesgerichtshof.de/rechtsprechung/bgh/feed.xml";
+	
+	    $.ajax({
+	      url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(FEED_URL),
+	      dataType: 'json',
+	      success: function success(data) {
+	        if (data.responseData.feed && data.responseData.feed.entries) {
+	          $.each(data.responseData.feed.entries, function (i, e) {
+	            console.log(e);
+	            console.log(i);
+	            console.log(feedList.eq(0).children().eq(i));
+	
+	            feedList.eq(0).children().eq(i).html('<a href="' + e.link + '">' + e.title + '</a>\n              <br>\n              ' + e.contentSnippet);
+	          });
+	        }
+	      }
+	    });
+	  }
 	});
 
 /***/ },

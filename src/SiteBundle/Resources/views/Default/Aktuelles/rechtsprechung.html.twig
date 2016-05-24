@@ -1,0 +1,45 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+{% block body %}
+
+  <main>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <span class="breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('aktuelles') }}">Aktuelles</a> > <a href="{{ path('rechtsprechung') }}">Rechtsprechung</a></span>
+        <h1>Rechtsprechung</h1>
+        <img src="{{ asset('bundles/site/images/bundesgerichtshof.jpg') }}" alt="">
+        <p>Nachfolgend stellen wir Ihnen Mitteilungen der Pressestelle des Bundesgerichtshofes tagesaktuell als Information zur Verfügung. Klicken Sie einfach auf einen der nachfolgenden Links, um zu der entsprechenden Pressemiteilung zu gelangen.</p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Die Entscheidungen des BGH</h1>
+        <ul class="rechtsprechung">
+          <li> </li>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Grundsatzentscheidungen</h1>
+        <p>Einzelene Entscheidungen der höchsten Gerichte bestimmen über Jahre die Rechtswirklichkeit in Deutschland. Einige dieser Grundsatzentsheidungen möchten wir Ihnen hier vorstellen.</p>
+      </div>
+    </section>
+
+  </main>
+
+
+
+{% endblock %}

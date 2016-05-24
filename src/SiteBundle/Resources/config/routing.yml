@@ -97,3 +97,15 @@ erbrecht:
 mietrecht:
     path:     /mietrecht
     defaults: { _controller: SiteBundle:Default:mietrecht }
+
+notar:
+    path:     /notar
+    defaults: { _controller: SiteBundle:Default:notar }
+
+aktuelles:
+    path:     /aktuelles
+    defaults: { _controller: SiteBundle:Default:aktuelles }
+
+rechtsprechung:
+    path:     /aktuelles/rechtsprechung
+    defaults: { _controller: SiteBundle:Default:rechtsprechung }
