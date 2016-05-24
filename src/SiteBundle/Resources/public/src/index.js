@@ -77,10 +77,6 @@ $(document).ready(function () {
       success  : function (data) {
         if (data.responseData.feed && data.responseData.feed.entries) {
           $.each(data.responseData.feed.entries, function (i, e) {
-            console.log(e);
-            console.log(i);
-            console.log(feedList.eq(0).children().eq(i));
-
             feedList.eq(0).children().eq(i).html(
               `<a href="${e.link}">${e.title}</a>
               <br>
