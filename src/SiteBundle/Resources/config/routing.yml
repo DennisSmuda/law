@@ -109,3 +109,15 @@ aktuelles:
 rechtsprechung:
     path:     /aktuelles/rechtsprechung
     defaults: { _controller: SiteBundle:Default:rechtsprechung }
+
+kosten:
+    path:     /kosten
+    defaults: { _controller: SiteBundle:Default:kosten }
+
+notdienst:
+    path:     /notdienst
+    defaults: { _controller: SiteBundle:Default:notdienst }
+
+links:
+    path:     /links
+    defaults: { _controller: SiteBundle:Default:links }

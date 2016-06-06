@@ -1,0 +1,43 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+{% block body %}
+
+  <main>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <span class="breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('links') }}">Links</a></span>
+        <h1>Links</h1>
+        <img src="{{ asset('bundles/site/images/links.jpg') }}" alt="">
+        <p>Unseren Notdienst in Strafsachen erreichen Sie außerhalb der Kanzleizeiten unter der Nummer:</p>
+        <p><strong>0234-9136717*</strong></p>
+        <p>Bitte beachten Sie, dass der Notdienst nur der Bearbeitung strafrechtlicher Notfälle dient. Sonstige telefonische Beratungsleistungen werden über den Notdienst nicht erbracht.</p>
+        <p>Herr Rechtsanwalt Reimann wird Sie im Rahmen des Notdienstes beraten und auch vertreten, soweit dies erforderlich ist. Die Inanspruchnahme dieser Leistungen ist gebührenpflichtig. Soweit keine Vergütungsvereinbarung abgeschlossen werden kann, entstehen die
+          <a href="{{ path('kosten') }}">Gebühren</a> nach dem RVG.</p>
+        <p><small>* Für den Anruf können Telefongebühren ab 2,9 Cent die Minute aus dem Festnetz der Deutschen Telekom entstehen. Mobilfunktarife können erheblich abweichen.</small></p>
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Warum ein Strafverteidiger-Notdienst?</h1>
+        <p>Die Notwendigkeit eines Notdienstes und die Notwendigkeit der sofortigen Hinzuziehung eines Anwaltes, bei einer Verhaftung, Durchsuchung oder Vernehmung lässt sich mit folgenden Worten am einfachsten zusammenfassen:</p>
+
+        <blockquote>
+          "Die erste Vernehmung des Beschuldigten entscheidet über den Ausgang des Verfahrens" <br>
+          <small>(Jerzy Montag, Rechtsanwalt und Mitglied des deutschen Bundestages"<small>
+        </blockquote>
+
+        <p>Die Bedeutung der ersten Ermittlungsmaßnahmen wird von den Betroffenen häufig unterschätzt, ein Anwalt oft aus Sorge über die
+          <a href="{{ path('kosten') }}">Kosten</a> spät oder gar nicht informiert, dabei entscheiden die ersten Maßnahmen der Ermittlungsbehörden über das gesamte weitere Strafverfahren. Wer seine Verteidigung zu spät organisiert läuft Gefahr, diese erheblich zu erschweren.</p>
+      </div>
+    </section>
+
+
+
+
+
+  </main>
+
+{% endblock %}

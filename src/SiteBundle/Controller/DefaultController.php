@@ -98,5 +98,14 @@ class DefaultController extends Controller
     public function rechtsprechungAction() {
         return $this->render('@Site/Default/Aktuelles/rechtsprechung.html.twig');
     }
+    public function kostenAction() {
+        return $this->render('@Site/Default/kosten.html.twig');
+    }
+    public function notdienstAction() {
+        return $this->render('@Site/Default/notdienst.html.twig');
+    }
+    public function linksAction() {
+        return $this->render('@Site/Default/links.html.twig');
+    }
 
 }

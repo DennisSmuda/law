@@ -1,13 +1,13 @@
 header {
+  padding: 0 1rem;
   height: $nav-height;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 99;
-  padding: 1rem;
-  color: $light-gray;
-  background-color: $bgcolor;
-  box-shadow: 0 0px 16px 9px rgba($coal, 0.1);
+  color: $red;
+  background-color: $white;
+  box-shadow: 0 0px 12px 6px rgba($coal, 0.05);
 
   @include display(flex);
   @include flex-direction(row);
@@ -19,6 +19,7 @@ header {
   }
 
   h2 {
+    font-weight: 400;
     @include flex(1);
   }
 
@@ -28,13 +29,11 @@ header {
     text-decoration: none;
     @include transition(all 0.6s);
 
-    color: rgba($light-gray, 0.5);
+    color: $red;
+    font-weight: 400;
 
-    &:hover {
-      color: $light-gray;
       //background-color: rgba($gray, 0.8);
 
-    }
   }
 
   @include max-screen($tablet-small) {
@@ -56,7 +55,7 @@ header {
 /****************/
 header nav.desktop {
   @include flex(1);
-  font-family: 'Lato';
+  height: 100%;
   font-weight: 400;
 
   ul {
@@ -76,6 +75,20 @@ header nav.desktop {
     }
   }
 
+  a {
+    position: relative;
+    top: 1.2rem;
+    padding: 1.4rem 0.5rem;
+
+    border-top: 3px solid transparent;
+
+    &:hover {
+      color: $blue;
+      border-top: 3px solid $blue;
+
+    }
+  }
+
   @include max-screen($tablet-small) {
     display: none;
   }
@@ -88,8 +101,7 @@ header nav.desktop {
 header nav.mobile {
   margin-top: 75px;
   overflow-y: scroll;
-  background-color: rgba($coal, 0.9);
-  background-color: lighten($bgcolor, 5);
+  background-color: rgba($white, 0.9);
 
   z-index: 1000;
   position: absolute;
@@ -101,10 +113,10 @@ header nav.mobile {
   @include transition(all 0.8s);
 
   a {
-    color: rgba($light-gray, 0.6);
+    color: $red;
 
     &:hover {
-      color: rgba($light-gray, 0.8);
+      color: $blue;
     }
   }
 
@@ -120,9 +132,9 @@ header nav.mobile {
       &:before {
         position: absolute;
         left: 1rem;
-        top: 1.3rem;
-        color: rgba($light-gray, 0.5);
-        font-size: 0.7rem;
+        top: 21px;
+        color: rgba($red, 0.5);
+        font-size: 0.6rem;
         display: inline-block;
         font-family: FontAwesome;
         content: '\f068';
@@ -168,14 +180,14 @@ header .hamburger {
   div {
     height: 3px;
     width: 100%;
-    background-color: rgba($light-gray, 0.6);
+    background-color: $red;
 
     @include transition(all 0.6s);
   }
 
   &:hover {
     div {
-      background-color: $light-gray;
+      background-color: $blue;
     }
   }
 }

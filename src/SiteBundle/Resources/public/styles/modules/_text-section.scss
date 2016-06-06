@@ -1,7 +1,7 @@
 .text-section {
 
   &__inner {
-    @include inner-middle(800px);
+    @include inner-middle(960px);
     padding: 2rem 0;
   }
 
@@ -24,7 +24,7 @@
 
   p {
     padding: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.7;
   }
 
@@ -37,7 +37,7 @@
   }
 
   ul {
-    padding: 1rem;
+    padding: 1rem 2.3rem;
     list-style-type: none;
     font-size: 1.3rem;
     line-height: 1.7;
@@ -46,13 +46,26 @@
   ul.disc {
     list-style-type: disc;
   }
+
+  blockquote {
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.4rem;
+    border-left: 2px solid rgba($red, 0.8);
+
+
+    small {
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+  }
 }
 
 
 
 
 .text-section.important {
-  background-color: rgba($ruby, 0.8);
+  background-color: rgba($blue, 0.5);
   color: rgba(#ffffff, 0.9);
 }
 

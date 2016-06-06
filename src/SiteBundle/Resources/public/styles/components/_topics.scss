@@ -1,22 +1,25 @@
 
 .topics {
-  background-color: $dark-gray;
+  background-color: $white;
+  padding: 2rem 0 4rem;
+
+}
+
+.topics__inner {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
 
   -js-display: flex;
   @include display(flex);
   @include flex-direction(row);
-  @include flex-wrap(wrap);
+
 }
 
 .topic {
   width: 25%;
-  height: 300px;
 
-  &, a { color: rgba($light-gray, 0.9); text-decoration: none; }
-
-
-  background-color: rgba($coal, 0.3);
-  padding: 2rem;
+  padding: 1rem;
   opacity: 0.8;
   @include transition(opacity 0.6s);
   text-align: center;
@@ -28,34 +31,28 @@
   @include max-screen(1200px) {
     width: 50%;
   }
-}
-
-.topic p {
-  padding: 2rem;
-}
-
-.topic__bg {
-  height: 100%;
-  width: 100%;
-
-  background-size: cover;
-  background-position: center center;
-}
-
-.topic__text {
-  width: 100%;
-  height: 100%;
-  background-color: rgba($coal, 0.8);
 
   @include display(flex);
   @include flex-direction(column);
-  @include justify-content(center);
+  @include justify-content(space-around);
+  @include align-items(center);
 }
 
-.topic h2 {
-  @include transition(all 0.6s);
+.topic .icon {
+  background: $blue;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
 
-  &:hover {
-    color: $light-gray;
-  }
+  -js-display: flex;
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include align-items(center);
+  margin: 1rem 0;
+}
+
+
+.topic h3 {
+  color: $red;
 }

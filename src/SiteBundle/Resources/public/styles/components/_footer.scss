@@ -1,6 +1,24 @@
 
 footer {
-  padding: 4rem;
-  background-color: $bgcolor;
-  color: rgba($light-gray, 0.5);
+  padding: 4rem 0;
+  background-color: $blue;
+  color: white;
+
+  @include flexin(row, center, center);
+
+  i, span {
+    padding: 0 0.5rem;
+  }
+
+  i {
+    font-size: 5px !important;
+  }
+
+  a {
+    color: white;
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
