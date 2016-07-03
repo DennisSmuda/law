@@ -24,6 +24,9 @@
   @include transition(opacity 0.6s);
   text-align: center;
 
+  text-decoration: none;
+  color: $coal;
+
   &:hover {
     opacity: 1;
   }
@@ -40,8 +43,8 @@
 
 .topic .icon {
   background: $blue;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 75px;
 
   -js-display: flex;

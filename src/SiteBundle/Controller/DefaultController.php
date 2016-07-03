@@ -107,5 +107,8 @@ class DefaultController extends Controller
     public function linksAction() {
         return $this->render('@Site/Default/links.html.twig');
     }
+    public function nagelAction() {
+        return $this->render('@Site/Default/kanzlei-nagel.html.twig');
+    }
 
 }

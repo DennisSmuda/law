@@ -1,0 +1,49 @@
+
+{% extends 'SiteBundle:Default:base.html.twig' %}
+
+{% block body %}
+
+  <main>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <span class="breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('notdienst') }}">Notdienst</a></span>
+        <h1>Kanzlei Manfred Nagel II</h1>
+        <img src="{{ asset('bundles/site/images/nagel-profil.jpg') }}" alt="">
+
+        <p>Die Kanzlei Eisel und Karrmann arbeitet in Bürogemeinschaft mit Herrn RA Manfred Nagel II, Notar a. D. zusammen. Das heißt, die Kanzleien teilen sich Büroflächen, bleiben aber eigenständig.</p>
+        <p>Herr RA Nagel ist Fachanwalt für Arbeitsrecht und spezialisiert auf den Bereich des öffentlichen Dienstrechtes. Bis November 2011 führte Herr Nagel sein Anwaltsbüro und Notariat in seinem Büro am Hellweg 16, 44787 Bochum. Seit Dezember 2011 führt Herr Rechtsanwalt Nagel sein Büro nun in Bürogemeinschaft mit unserem Büro weiter.</p>
+
+      </div>
+    </section>
+
+    <section class="text-section">
+      <div class="text-section__inner">
+        <h1>Kontakt</h1>
+        <p>
+          Anfragen an Herrn RA Nagel können nicht über das Büro der Kanzlei Eisel und Karrmann abgewickelt werden. Richten Sie Ihre Anfragen daher bitte an das Büro des Kollegen Nagel. Sie können Herrn Nagel wie folgt erreichen:
+        </p>
+
+        <h2>Kanzleianschrift</h2>
+        <p>Rechtsanwalt und Notar a. D. Manfred Nagel II <br>
+          Kurt-Schumacher-Platz 8 <br>
+          44787 Bochum
+        </p>
+        <p>
+          Telefon: 0234-60417 <br>
+          Fax: 0234-9122777 <br>
+          E-Mail: <a href="mailto:ra.manfred.nagel@kanzleinagel2.de">ra.manfred.nagel@kanzleinagel2.de</a>
+        </p>
+
+        <h2>Sprechzeiten</h2>
+        <p>Termine nach Vereinbarung.</p>
+      </div>
+    </section>
+
+
+
+
+
+  </main>
+
+{% endblock %}

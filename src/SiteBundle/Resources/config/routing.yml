@@ -121,3 +121,7 @@ notdienst:
 links:
     path:     /links
     defaults: { _controller: SiteBundle:Default:links }
+
+nagel:
+    path:     /manfred-nagel
+    defaults: { _controller: SiteBundle:Default:nagel }
