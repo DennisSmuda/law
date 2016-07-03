@@ -101,7 +101,7 @@ header nav.desktop {
 header nav.mobile {
   margin-top: 75px;
   overflow-y: scroll;
-  background-color: rgba($white, 0.9);
+  background-color: rgba($white, 1);
 
   z-index: 1000;
   position: absolute;
@@ -199,7 +199,7 @@ header .hamburger {
   width: 100vw;
   height: 100vh;
   top: 0;
-  left: $mobile-nav-width;
+  //left: $mobile-nav-width;
   right: 0;
   bottom: 0;
   background-color: rgba($coal, 0.3);

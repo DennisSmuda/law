@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'quicksandlight';
+    src: url('Quicksand-Light-webfont.eot');
+    src: url('Quicksand-Light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('Quicksand-Light-webfont.woff2') format('woff2'),
+    url('Quicksand-Light-webfont.woff') format('woff'),
+    url('Quicksand-Light-webfont.ttf') format('truetype'),
+    url('Quicksand-Light-webfont.svg#quicksandlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+​
+​
+​
+​
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('Quicksand-Regular-webfont.eot');
+    src: url('Quicksand-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('Quicksand-Regular-webfont.woff2') format('woff2'),
+    url('Quicksand-Regular-webfont.woff') format('woff'),
+    url('Quicksand-Regular-webfont.ttf') format('truetype'),
+    url('Quicksand-Regular-webfont.svg#quicksandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

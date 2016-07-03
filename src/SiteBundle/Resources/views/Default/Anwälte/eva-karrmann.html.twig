@@ -5,11 +5,16 @@
 
   <main>
 
+
+    <div class="bg-image" style="background-image: url({{ asset('bundles/site/images/karrmann.jpg') }})">
+      <div class="image-overlay">
+        <h1>Rechtsanwältin Eva Karrmann</h1>
+      </div>
+    </div>
+
     <section class="attorney">
       <div class="attorney__inner">
         <span class="breadcrumbs"><a href="{{ path('site_homepage') }}">Startseite</a> > <a href="{{ path('anwaelte') }}">Anwälte</a> > <a href="{{ path('lutzEisel') }}">Rechtsanwalt und Notar Lutz Eisel</a></span>
-        <h1>Rechtsanwältin Eva Karrmann</h1>
-        <img src="{{ asset('bundles/site/images/eva-karrmann.jpg') }}" alt="">
         <p>Guten Tag,</p>
         <p>ich freue mich über Ihr Interesse an unserer Kanzlei. Hier ein paar Informationen zu meiner Person:</p>
         <p>Ich habe 1975 Abitur gemacht und dann von 1975 – 1981 in Münster Rechtswissenschaft studiert,
@@ -26,7 +31,7 @@
     <section class="text-section attorney">
       <div class="attorney__inner">
         <h2>Mitgliedschaften</h2>
-        <ul>
+        <ul class="disc">
           <li><a href="http://www.strafverteidigervereinigung-nrw.de/">Strafverteidigervereinigung NRW e.V.</a></li>
           <li><a href="http://www.rav.de/start/">Republikanischer Anwälte- und Anwältinnenverein (RAV)</a></li>
           <li><a href="http://www.bochumer-anwaltverein.de/">Bochumer Anwalt- & Notarverein</a></li>
