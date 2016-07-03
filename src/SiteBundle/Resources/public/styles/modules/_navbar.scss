@@ -152,9 +152,12 @@ header nav.mobile {
 header nav.mobile > ul > li {
   border-bottom: 1px solid rgba($light-gray, 0.3);
 
+
   &.open {
     > a { content: 'Zurück'}
     ul {
+      padding-left: 0em;
+      text-indent: -0.5rem;
     }
   }
 }

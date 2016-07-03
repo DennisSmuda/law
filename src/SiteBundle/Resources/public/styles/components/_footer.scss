@@ -1,8 +1,8 @@
 
 footer {
-  padding: 4rem 0;
+  padding: 2rem 0;
   background-color: $blue;
-  color: white;
+  color: rgba($light-gray, 0.9);
 
   @include flexin(row, center, center);
 
@@ -15,10 +15,16 @@ footer {
   }
 
   a {
-    color: white;
+    color: rgba($light-gray, 0.9);
     
     &:hover {
       text-decoration: none;
     }
+  }
+
+  @include max-screen($tablet-wide) {
+    @include flex-direction(column);
+
+    i { display: none !important; }
   }
 }

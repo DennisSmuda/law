@@ -13,6 +13,7 @@
   -js-display: flex;
   @include display(flex);
   @include flex-direction(row);
+  @include flex-wrap(wrap);
 
 }
 
@@ -31,7 +32,7 @@
     opacity: 1;
   }
 
-  @include max-screen(1200px) {
+  @include max-screen($tablet) {
     width: 50%;
   }
 

@@ -145,7 +145,14 @@ body {
   -webkit-flex-direction: row;
   -moz-flex-direction: row;
   flex-direction: row;
-  -ms-flex-direction: row; }
+  -ms-flex-direction: row;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .topic {
   width: 25%;
@@ -194,7 +201,7 @@ body {
   -ms-flex-align: center; }
   .topic:hover {
     opacity: 1; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 768px) {
     .topic {
       width: 50%; } }
 
@@ -362,9 +369,9 @@ body {
   color: #2f80e7; }
 
 footer {
-  padding: 4rem 0;
+  padding: 2rem 0;
   background-color: #1c1850;
-  color: white;
+  color: rgba(245, 247, 250, 0.9);
   -js-display: flex;
   display: -webkit-box;
   display: -moz-box;
@@ -406,9 +413,23 @@ footer {
   footer i {
     font-size: 5px !important; }
   footer a {
-    color: white; }
+    color: rgba(245, 247, 250, 0.9); }
     footer a:hover {
       text-decoration: none; }
+  @media only screen and (max-width: 1024px) {
+    footer {
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      box-orient: vertical;
+      -webkit-box-direction: normal;
+      -moz-box-direction: normal;
+      box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-direction: column; }
+      footer i {
+        display: none !important; } }
 
 /**=======================**/
 /** Modules **===========**/
@@ -612,6 +633,9 @@ header nav.mobile > ul > li {
   border-bottom: 1px solid rgba(245, 247, 250, 0.3); }
   header nav.mobile > ul > li.open > a {
     content: 'Zur\FC  ck'; }
+  header nav.mobile > ul > li.open ul {
+    padding-left: 0em;
+    text-indent: -0.5rem; }
 
 /*************/
 /* Hamburger */
@@ -858,6 +882,8 @@ li.active a, li.active a:hover {
 .text-section.important {
   background-color: rgba(28, 24, 80, 0.5);
   color: rgba(255, 255, 255, 0.9); }
+  .text-section.important h1 {
+    color: rgba(255, 255, 255, 0.9); }
 
 table {
   width: 100%;
